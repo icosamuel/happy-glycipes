@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Concombre au citron et à la menthe",
+    "description": "Un accompagnement frais, croquant et sans cuisson.",
+    "author": {
+      "@type": "Organization",
+      "name": "Happy Glycipes"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "2",
+    "recipeCategory": "Accompagnement",
+    "prepTime": "PT10M"
+  },
+  "wiki": {
+    "id": "concombre-citron-menthe",
+    "status": "published",
+    "experience": "non testé",
+    "sourceUrl": "https://raw.githubusercontent.com/icosamuel/happy-glycipes/main/docs/sources/concombre-citron.html",
+    "canonicalUrl": "https://raw.githubusercontent.com/icosamuel/happy-glycipes/main/docs/sources/concombre-citron.html",
+    "originalUrl": "https://raw.githubusercontent.com/icosamuel/happy-glycipes/main/docs/sources/concombre-citron.html",
+    "importedAt": "2026-11-01T20:11:21.254Z",
+    "importerVersion": "1.0.0",
+    "tags": [
+      "Végétarien",
+      "Sans cuisson"
+    ],
+    "ingredients": [
+      {
+        "id": "usage-1",
+        "name": "Concombre",
+        "quantity": 1,
+        "unit": "",
+        "note": "Laver puis couper en demi-rondelles.",
+        "sourceLine": "1 concombre",
+        "article": "concombre"
+      },
+      {
+        "id": "usage-2",
+        "name": "Jus de citron",
+        "quantity": 15,
+        "unit": "ml",
+        "note": "Quantité mesurée, à prévoir.",
+        "sourceLine": "15 ml jus de citron"
+      },
+      {
+        "id": "usage-3",
+        "name": "Menthe",
+        "quantity": 6,
+        "unit": "feuilles",
+        "note": "Ciseler avant de servir.",
+        "sourceLine": "6 feuilles de menthe"
+      },
+      {
+        "id": "usage-4",
+        "name": "Sel",
+        "quantity": null,
+        "unit": "",
+        "note": "Au goût, produit courant pour cet usage.",
+        "sourceLine": "Sel au goût",
+        "pantry": true
+      }
+    ],
+    "sourceIngredients": [
+      "1 concombre",
+      "15 ml jus de citron",
+      "6 feuilles de menthe",
+      "Sel au goût"
+    ],
+    "steps": [
+      {
+        "name": "Préparer le concombre",
+        "text": "Laver le {{article:concombre}} et le couper en fines demi-rondelles."
+      },
+      {
+        "name": "Assaisonner",
+        "text": "Mélanger le concombre avec le jus de citron et la menthe ciselée. Saler au goût et servir frais."
+      }
+    ],
+    "sourceInstructions": [
+      {
+        "@type": "HowToStep",
+        "name": "Préparer le concombre",
+        "text": "Laver le concombre et le couper en fines demi-rondelles."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Assaisonner",
+        "text": "Mélanger le concombre avec le jus de citron et la menthe ciselée. Saler au goût et servir frais."
+      }
+    ],
+    "sourceYield": "2",
+    "pantry": [
+      "Sel au goût"
+    ],
+    "dependencies": [],
+    "allocations": [],
+    "warnings": [
+      "Aucune donnée nutritionnelle fournie; conformité keto non évaluée.",
+      "Temps total et durée de cuisson non renseignés par la source; préparation sans cuisson.",
+      "Recette non cuisinée dans le cadre de cette publication."
+    ],
+    "adaptations": [
+      "Catégorie et tags attribués explicitement après import.",
+      "Correspondance Concombre validée; menthe normalisée en feuilles; sel classé produit courant.",
+      "Deux portions conservées; aucune valeur nutritionnelle calculée."
+    ],
+    "rights": {
+      "mode": "original",
+      "text": "Texte original Happy Glycipes, CC0 1.0.",
+      "photos": "Aucune photographie reprise.",
+      "evidence": "https://github.com/icosamuel/happy-glycipes/blob/main/docs/sources/concombre-citron.html"
+    },
+    "importId": "import-f236d1fa83f5ace2",
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recette non cuisinée",
+      "date": "2026-11-01",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
+    }
+  }
+}

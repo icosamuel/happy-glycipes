@@ -9,7 +9,7 @@ test('×1 → ×3 → ×1 est calculé depuis la base, avec fractions et inconnu
   assert.equal(scaleQuantity(null,2),null);
 });
 test('seules les références de quantité changent; temps, nutrition et source restent stables',()=>{
-  const d=loadRecipes()[0],w=d.wiki;
+  const d=loadRecipes().find(d=>d.wiki.id==='galettes-poireaux-ricotta'),w=d.wiki;
   assert.equal(expandStep('3 minutes et {{allocation:pate}} œufs',w),'3 minutes et 2 œufs');
   assert.match(expandStep(w.steps[1].text,w,{html:true,link:()=> 'farine'}),/data-scale="2"/);
   const ld=recipeJsonLd(d);assert.equal(ld.cookTime,'PT15M');assert.equal(ld.nutrition.calories,'342 kcal');

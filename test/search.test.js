@@ -11,7 +11,7 @@ test('index dérivé: accents, ligatures, alias, recettes et rubriques',()=>{
   assert.deepEqual(searchIndex(index,''),[]);
 });
 test('ajout publié régénère index et liens entrants; brouillon exclu',()=>{
-  const recipes=structuredClone(loadRecipes()),d=structuredClone(recipes[0]);
+  const recipes=structuredClone(loadRecipes()),d=structuredClone(recipes.find(d=>d.wiki.id==='galettes-poireaux-ricotta'));
   d.wiki.id='deuxieme';d.recipe.name='Deuxième plat';recipes.push(d);
   assert.equal(incoming(recipes,'farine-amande').length,2);
   assert.ok(catalog(recipes,loadArticles()).some(e=>e.id==='deuxieme'));
