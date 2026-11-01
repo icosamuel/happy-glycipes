@@ -4,7 +4,7 @@ title: "Recette proposée : "
 body:
   - type: markdown
     attributes:
-      value: Un mainteneur autorisera l'import. Aucun contenu n'est publié automatiquement. Ne partagez pas d'information privée.
+      value: Cette proposition crée seulement une issue. Le propriétaire déclenchera ensuite un agent pour l'ingestion. Aucun import ni publication automatique. Ne partagez pas d'information privée.
   - type: input
     id: url
     attributes:
