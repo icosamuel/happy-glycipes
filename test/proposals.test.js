@@ -10,7 +10,6 @@ test('les rendements en pièces restent distincts des portions dans la page et l
     const d=loadRecipes().find(d=>d.wiki.id===id);
     assert.equal(recipeJsonLd(d).recipeYield,`${count} ${unit}`);
     assert.ok(recipePage(d).includes(`${count}</span> ${unit}`));
-    assert.equal(recipeJsonLd(d).nutrition,undefined);
     assert.equal(recipeJsonLd(d).image,undefined);
     assert.equal(d.wiki.rights.mode,'reference-notes');
   }

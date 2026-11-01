@@ -11,7 +11,15 @@
     },
     "inLanguage": "fr-CA",
     "recipeYield": "12",
-    "recipeCategory": "Accompagnement"
+    "recipeCategory": "Accompagnement",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "~185 kcal",
+      "fatContent": "~15 g",
+      "proteinContent": "~7 g",
+      "carbohydrateContent": "~6 g",
+      "fiberContent": "~4 g"
+    }
   },
   "wiki": {
     "id": "pain-olives",
@@ -163,7 +171,7 @@
     "allocations": [],
     "warnings": [
       "Recette non cuisinée; conformité keto non évaluée.",
-      "Estimations nutritionnelles de la proposition non reprises : méthode de calcul non documentée, aucune validation ni recalcul.",
+      "Estimations nutritionnelles de la proposition reprises avec attribution, sans validation ni recalcul. Méthode de calcul non documentée.",
       "Rendement : un petit pain, environ 12 tranches, et non 12 portions repas. Taille du moule, calibre des œufs et température de l’eau non précisés.",
       "Options hors provisions de base : 2 c. à soupe de tomates séchées hachées, 1 c. à soupe de romarin frais, feta en quantité inconnue. Elles ne sont pas ajoutées automatiquement.",
       "Aucune durée totale déduite de la cuisson et du refroidissement; préparation non chronométrée."
@@ -198,6 +206,20 @@
     },
     "counts": {
       "tranches": 12
+    },
+    "nutritionProvenance": {
+      "source": "https://github.com/icosamuel/happy-glycipes/issues/19",
+      "basis": "par tranche si coupé en 12",
+      "verified": false,
+      "note": "Estimations de la proposition, non vérifiées et non recalculées. Méthode de calcul non documentée."
+    },
+    "netCarbs": {
+      "value": "~2",
+      "unit": "g",
+      "basis": "par tranche si coupé en 12",
+      "provenance": "https://github.com/icosamuel/happy-glycipes/issues/19",
+      "verified": false,
+      "calculationMethod": null
     }
   }
 }

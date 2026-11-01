@@ -22,7 +22,8 @@ export function validateRecipe({version, recipe:r, wiki:w}) {
     ids.add(i.id);
     if(i.quantity !== null && (!Number.isFinite(i.quantity) || i.quantity<=0)) fail(`quantité invalide: ${i.id}`);
   }
-  if(r.nutrition && (!w.nutritionProvenance?.source || w.nutritionProvenance.basis !== 'par portion')) fail('provenance nutrition absente');
+  if((r.nutrition || w.reportedNutrition || w.netCarbs) && (!w.nutritionProvenance?.source || !w.nutritionProvenance.basis?.trim())) fail('provenance nutrition absente');
+  if(r.nutrition && w.nutritionProvenance.basis === 'non précisée dans la source') fail('base nutrition inconnue dans le JSON-LD');
   if(w.status === 'published' && (!w.rights?.mode || !w.warnings?.length)) fail('droits ou incertitudes absents');
   if(r.image) fail('photo non autorisée: ajouter un contrat média avant publication');
   validateEditorial(w);

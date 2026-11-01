@@ -12,7 +12,16 @@
     "inLanguage": "fr-CA",
     "recipeYield": "8",
     "recipeCategory": "Collation",
-    "totalTime": "PT75M"
+    "totalTime": "PT75M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "291 kcal",
+      "fatContent": "~24 g",
+      "carbohydrateContent": "~11 g",
+      "fiberContent": "~5 g",
+      "proteinContent": "~10 g",
+      "sodiumContent": "~220 mg"
+    }
   },
   "wiki": {
     "id": "pain-citrouille",
@@ -169,7 +178,7 @@
     "allocations": [],
     "warnings": [
       "Recette non cuisinée; conformité keto non évaluée. Le nom de la proposition ne constitue pas une validation nutritionnelle.",
-      "Estimations nutritionnelles de l’issue non reprises : méthode de calcul et références des produits inconnues. Aucune valeur recalculée.",
+      "Estimations nutritionnelles de la proposition reprises avec attribution, sans validation ni recalcul. Méthode de calcul non documentée.",
       "Rendement annoncé : environ 8 portions pour un pain, sans masse ni taille de portion définie.",
       "Moule, calibre des œufs, texture de la purée, mouture de la farine, formulation de l’édulcorant et composition des pépites sans sucre non précisés.",
       "Cuisson annoncée : environ 45 à 55 minutes. Temps total annoncé : environ 1 h 15; répartition préparation/refroidissement non détaillée. Le refroidissement n’est pas chronométré.",
@@ -202,6 +211,20 @@
         "rights": true,
         "ambiguities": true
       }
+    },
+    "nutritionProvenance": {
+      "source": "https://github.com/icosamuel/happy-glycipes/issues/21",
+      "basis": "par portion — environ 8 portions",
+      "verified": false,
+      "note": "Estimations de la proposition, non vérifiées et non recalculées. Méthode de calcul non documentée."
+    },
+    "netCarbs": {
+      "value": "~6",
+      "unit": "g",
+      "basis": "par portion — environ 8 portions",
+      "provenance": "https://github.com/icosamuel/happy-glycipes/issues/21",
+      "verified": false,
+      "calculationMethod": null
     }
   }
 }
