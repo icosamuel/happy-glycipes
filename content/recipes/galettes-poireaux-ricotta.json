@@ -15,28 +15,6 @@
     "totalTime": "PT25M",
     "recipeYield": "2",
     "recipeCategory": "Déjeuner",
-    "recipeInstructions": [
-      {
-        "@type": "HowToStep",
-        "name": "Attendrir les poireaux",
-        "text": "Chauffer le beurre à feu moyen. Ajouter le poireau et remuer occasionnellement pendant environ 7 minutes."
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Mélanger la pâte",
-        "text": "Réunir ricotta, deux œufs battus, parmesan, farine d’amande et assaisonnements. Mélanger, puis ajouter les deux tiers du poireau."
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Dorer les galettes",
-        "text": "Huiler la poêle à feu moyen-vif. Former quatre galettes, avec deux grandes cuillerées chacune. Cuire environ 3 minutes par face, jusqu’à ce que le centre soit pris."
-      },
-      {
-        "@type": "HowToStep",
-        "name": "Dresser les assiettes",
-        "text": "Préparer 1 œuf poché selon la technique liée. Servir les galettes avec le poireau réservé et l’œuf poché."
-      }
-    ],
     "nutrition": {
       "@type": "NutritionInformation",
       "calories": "342 kcal",
@@ -179,7 +157,54 @@
         "quantity": 1,
         "unit": "gros"
       }
-    ]
+    ],
+    "steps": [
+      {
+        "@type": "HowToStep",
+        "name": "Attendrir les poireaux",
+        "text": "Chauffer le beurre à feu moyen. Ajouter le poireau et remuer occasionnellement pendant environ 7 minutes."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Mélanger la pâte",
+        "text": "Réunir ricotta, {{allocation:pate}} œufs battus, parmesan, {{article:farine-amande}} et assaisonnements. Mélanger, puis ajouter les deux tiers du poireau."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Dorer les galettes",
+        "text": "Huiler la poêle à feu moyen-vif. Former {{count:galettes}} galettes, avec deux grandes cuillerées chacune. Cuire environ 3 minutes par face, jusqu’à ce que le centre soit pris."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Dresser les assiettes",
+        "text": "Préparer {{allocation:oeuf-poche}} {{article:oeuf-poche}} pour le dressage. Servir les galettes avec le poireau réservé."
+      }
+    ],
+    "sourceInstructions": [
+      {
+        "@type": "HowToStep",
+        "name": "Attendrir les poireaux",
+        "text": "Chauffer le beurre à feu moyen. Ajouter le poireau et remuer occasionnellement pendant environ 7 minutes."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Mélanger la pâte",
+        "text": "Réunir ricotta, deux œufs battus, parmesan, farine d’amande et assaisonnements. Mélanger, puis ajouter les deux tiers du poireau."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Dorer les galettes",
+        "text": "Huiler la poêle à feu moyen-vif. Former quatre galettes, avec deux grandes cuillerées chacune. Cuire environ 3 minutes par face, jusqu’à ce que le centre soit pris."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Dresser les assiettes",
+        "text": "Préparer 1 œuf poché selon la technique liée. Servir les galettes avec le poireau réservé et l’œuf poché."
+      }
+    ],
+    "counts": {
+      "galettes": 4
+    }
   },
   "version": 1
 }

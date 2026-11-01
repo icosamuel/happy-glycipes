@@ -1,5 +1,7 @@
 import {searchIndex,matchesFilters} from './search.js';
+import {scaleQuantity,loadNote,saveNote} from './quantities.js';
 let anchor;
+let multiplier=1;
 const pop=document.querySelector('#preview');
 function closePreview(restore=false) {
   if(!pop || pop.hidden)return;
@@ -21,7 +23,7 @@ document.addEventListener('click',event=>{
     if(anchor===link && !pop.hidden){closePreview(true);return}
     closePreview();anchor=link;
     pop.querySelector('h2').textContent=link.dataset.title;
-    pop.querySelector('p').textContent=link.dataset.summary;
+    pop.querySelector('p').textContent=link.dataset.summary+(link.dataset.allocation?` Dans cette recette : ${scaleQuantity(Number(link.dataset.allocation),multiplier)} œuf(s), déjà inclus dans le total.`:'');
     pop.querySelector('a').href=link.href;
     pop.hidden=false;anchor.setAttribute('aria-expanded','true');positionPreview();
     pop.querySelector('button').focus();
@@ -59,6 +61,27 @@ if(search && results){
     if(event.key==='ArrowUp'){event.preventDefault();if(pos<=0)search.focus();else links[pos-1]?.focus()}
   });
   document.addEventListener('click',event=>{if(!event.target.closest('.header-search'))hideResults()});
+}
+
+const cooking=document.querySelector('[data-cooking]');
+if(cooking){
+  document.querySelectorAll('[data-cooking-control]').forEach(el=>el.hidden=false);
+  for(const button of document.querySelectorAll('[data-mult]'))button.addEventListener('click',()=>{
+    multiplier=Number(button.dataset.mult);
+    for(const el of document.querySelectorAll('[data-scale]'))el.textContent=String(scaleQuantity(Number(el.dataset.scale),multiplier));
+    document.querySelectorAll('[data-mult]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    closePreview();document.querySelector('#quantity-status').textContent=`Quantités ×${multiplier}. Durées à adapter; nutrition inchangée par portion.`;
+  });
+  const checks=[...document.querySelectorAll('[data-ingredient-check]')];
+  const updateReady=()=>document.querySelector('#ready').textContent=`${checks.filter(c=>c.checked).length} / ${checks.length} ingrédients prêts`;
+  checks.forEach(c=>c.addEventListener('change',updateReady));
+  document.querySelector('#reset-ready').addEventListener('click',()=>{checks.forEach(c=>c.checked=false);updateReady()});updateReady();
+  const note=document.querySelector('#note'),status=document.querySelector('#saved'),id=cooking.dataset.cooking;
+  let storage;
+  try{storage=localStorage}catch{}
+  const loaded=loadNote(storage,id);note.value=loaded.value;
+  if(!loaded.ok)status.textContent='Stockage indisponible : cette note restera temporaire.';
+  note.addEventListener('input',()=>{status.textContent=saveNote(storage,id,note.value)?'Note enregistrée dans ce navigateur.':'Sauvegarde impossible : cette note restera temporaire.'});
 }
 
 const filterForm=document.querySelector('#filters');
