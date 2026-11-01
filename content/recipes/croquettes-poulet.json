@@ -145,12 +145,12 @@
     "allocations": [],
     "warnings": [
       "Recette non cuisinée; conformité keto non évaluée.",
-      "Estimations nutritionnelles de la proposition non reprises : méthode de calcul non documentée, aucune validation ni recalcul.",
+      "Estimations nutritionnelles de la proposition reprises avec attribution, sans validation ni recalcul. Méthode de calcul non documentée.",
       "Rendement annoncé : environ 90 croquettes pour 4 kg de poulet. Nombre de portions repas et masse finale inconnus. Les quantités d’œufs et de panure représentent les provisions, pas leur absorption.",
       "Cuisson non validée : état congelé ou décongelé au moment de cuire, taille des pièces, capacité de l’appareil et nombre de fournées à confirmer. Les 22 minutes ne garantissent pas la cuisson à cœur.",
       "Option hors base : 1 à 2 c. à thé de Cayenne. Variante croustillante : soit 150 à 200 g de couennes broyées, soit 200 g de parmesan en plus des 450 g de base; ne pas additionner les deux variantes par défaut.",
       "Sauces suggérées, hors provisions et sans quantités : mayonnaise–sriracha, mayonnaise–miel–moutarde, yogourt grec–citron–ail. Aucune préparation liée ajoutée ni conformité keto supposée pour ces sauces.",
-      "Tableau nutritionnel source omis : taille de portion absente. Congélation minimale de 24 heures conservée en texte, aucun temps total ni durée de cuisson du lot déduit."
+      "Tableau nutritionnel source reproduit à titre indicatif : taille de portion non précisée, aucune conversion par croquette ou par repas. Congélation minimale de 24 heures conservée en texte, aucun temps total ni durée de cuisson du lot déduit."
     ],
     "adaptations": [
       "Aucune URL externe fournie : l’issue constitue la référence. Aucun auteur original ni droit de republication confirmé.",
@@ -184,6 +184,27 @@
     },
     "counts": {
       "croquettes": 90
+    },
+    "reportedNutrition": {
+      "@type": "NutritionInformation",
+      "calories": "350–390 kcal",
+      "proteinContent": "30–35 g",
+      "fatContent": "22–27 g",
+      "fiberContent": "2–4 g"
+    },
+    "nutritionProvenance": {
+      "source": "https://github.com/icosamuel/happy-glycipes/issues/20",
+      "basis": "non précisée dans la source",
+      "verified": false,
+      "note": "Estimations de la proposition, non vérifiées et non recalculées. Méthode de calcul non documentée."
+    },
+    "netCarbs": {
+      "value": "3–5",
+      "unit": "g",
+      "basis": "non précisée dans la source",
+      "provenance": "https://github.com/icosamuel/happy-glycipes/issues/20",
+      "verified": false,
+      "calculationMethod": null
     }
   }
 }
