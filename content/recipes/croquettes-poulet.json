@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Croquettes de poulet à la farine d’amande et au parmesan",
+    "description": "Notes reformulées de la proposition #20 de jobed85. Rendement annoncé : 4 kg de poulet — environ 90 croquettes. Recette non testée.",
+    "author": {
+      "@type": "Person",
+      "name": "jobed85 (proposition; auteur original non confirmé)"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "90",
+    "recipeCategory": "Plat principal"
+  },
+  "wiki": {
+    "id": "croquettes-poulet",
+    "status": "published",
+    "experience": "non testé",
+    "sourceUrl": "https://github.com/icosamuel/happy-glycipes/issues/20",
+    "canonicalUrl": "https://github.com/icosamuel/happy-glycipes/issues/20",
+    "originalUrl": "https://github.com/icosamuel/happy-glycipes/issues/20",
+    "importedAt": "2026-11-01T20:31:51.620Z",
+    "importerVersion": "1.0.0",
+    "tags": [
+      "À la friteuse à air"
+    ],
+    "ingredients": [
+      {
+        "id": "poulet",
+        "name": "Poulet désossé",
+        "quantity": 4,
+        "unit": "kg",
+        "note": "À hacher et à façonner; 4 kg de poulet, pas de produit fini.",
+        "sourceLine": "4 kg de poulet désossé"
+      },
+      {
+        "id": "oeufs",
+        "name": "Œufs",
+        "quantity": 10,
+        "unit": "",
+        "note": "Bain de panure uniquement; quantité à prévoir, absorption inconnue.",
+        "sourceLine": "Prévoir 10 oeufs pour faire tenir la panure"
+      },
+      {
+        "id": "amande",
+        "name": "Farine d’amande",
+        "quantity": 700,
+        "unit": "g",
+        "note": "Panure pour le lot entier; surplus non quantifié.",
+        "sourceLine": "700 g de farine d’amande",
+        "article": "farine-amande"
+      },
+      {
+        "id": "parmesan",
+        "name": "Parmesan râpé finement",
+        "quantity": 450,
+        "unit": "g",
+        "note": "Base uniquement; supplément optionnel exclu.",
+        "sourceLine": "450 g de parmesan râpé finement"
+      },
+      {
+        "id": "paprika",
+        "name": "Paprika",
+        "quantity": 3,
+        "unit": "c. à soupe",
+        "note": "",
+        "sourceLine": "3 c. à soupe de paprika"
+      },
+      {
+        "id": "ail",
+        "name": "Poudre d’ail",
+        "quantity": 2,
+        "unit": "c. à soupe",
+        "note": "",
+        "sourceLine": "2 c. à soupe de poudre d’ail"
+      },
+      {
+        "id": "oignon",
+        "name": "Poudre d’oignon",
+        "quantity": 2,
+        "unit": "c. à soupe",
+        "note": "",
+        "sourceLine": "2 c. à soupe de poudre d’oignon"
+      },
+      {
+        "id": "sel",
+        "name": "Sel",
+        "quantity": 2,
+        "unit": "c. à thé",
+        "note": "Produit courant mesuré, conservé dans À prévoir.",
+        "sourceLine": "2 c. à thé de sel"
+      },
+      {
+        "id": "poivre",
+        "name": "Poivre",
+        "quantity": 2,
+        "unit": "c. à thé",
+        "note": "Produit courant mesuré, conservé dans À prévoir.",
+        "sourceLine": "2 c. à thé de poivre"
+      },
+      {
+        "id": "huile",
+        "name": "Huile d’olive ou d’avocat",
+        "quantity": null,
+        "unit": "",
+        "note": "Vaporiser ou verser un filet léger sur les deux faces; quantité inconnue.",
+        "sourceLine": "Huile d’olive ou avocat en vaporisateur ou filet léger",
+        "pantry": true
+      }
+    ],
+    "sourceIngredients": [
+      "4 kg de poulet désossé",
+      "Prévoir 10 oeufs pour faire tenir la panure",
+      "700 g de farine d’amande",
+      "450 g de parmesan râpé finement",
+      "3 c. à soupe de paprika",
+      "2 c. à soupe de poudre d’ail",
+      "2 c. à soupe de poudre d’oignon",
+      "2 c. à thé de sel",
+      "2 c. à thé de poivre",
+      "Huile d’olive ou avocat en vaporisateur ou filet léger"
+    ],
+    "steps": [
+      {
+        "name": "Façonner et congeler",
+        "text": "Hacher le poulet désossé et façonner environ {{count:croquettes}} pièces de taille régulière. La proposition prévoit ensuite une congélation d’au moins 24 heures avant la panure. Épaisseur et dimensions non précisées."
+      },
+      {
+        "name": "Organiser la panure",
+        "text": "Battre les œufs dans un récipient. Dans un autre, réunir la {{article:farine-amande}}, le parmesan et les assaisonnements mesurés. Le bain d’œufs et la panure utilisent les quantités du lot, sans ajout de préparation séparée."
+      },
+      {
+        "name": "Enrober",
+        "text": "Pour {{article:paner}}, passer chaque croquette dans les œufs, laisser tomber l’excédent puis appliquer le mélange sec en pressant doucement. La source ne précise pas si les pièces doivent être décongelées; ne pas interpréter « égoutter » comme une consigne de décongélation."
+      },
+      {
+        "name": "Cuire avec contrôle à cœur",
+        "text": "Appliquer un voile d’huile sur les deux faces. Cuire en plusieurs fournées selon la capacité de la friteuse à air. La proposition annonce « 375° » sans unité et 22 minutes : réglage et durée à confirmer pour la taille et l’état des pièces, aucune conversion imposée. Contrôler au thermomètre une température à cœur d’au moins 74 °C pour le poulet haché; la coloration de la panure ne suffit pas. Voir la rubrique Paner pour la référence de Santé Canada."
+      }
+    ],
+    "sourceInstructions": [],
+    "sourceYield": "4 kg de poulet — environ 90 croquettes",
+    "dependencies": [],
+    "allocations": [],
+    "warnings": [
+      "Recette non cuisinée; conformité keto non évaluée.",
+      "Estimations nutritionnelles de la proposition non reprises : méthode de calcul non documentée, aucune validation ni recalcul.",
+      "Rendement annoncé : environ 90 croquettes pour 4 kg de poulet. Nombre de portions repas et masse finale inconnus. Les quantités d’œufs et de panure représentent les provisions, pas leur absorption.",
+      "Cuisson non validée : unité de 375°, état congelé ou décongelé au moment de cuire, taille des pièces, capacité de l’appareil et nombre de fournées à confirmer. Les 22 minutes ne garantissent pas la cuisson à cœur.",
+      "Option hors base : 1 à 2 c. à thé de Cayenne. Variante croustillante : soit 150 à 200 g de couennes broyées, soit 200 g de parmesan en plus des 450 g de base; ne pas additionner les deux variantes par défaut.",
+      "Sauces suggérées, hors provisions et sans quantités : mayonnaise–sriracha, mayonnaise–miel–moutarde, yogourt grec–citron–ail. Aucune préparation liée ajoutée ni conformité keto supposée pour ces sauces.",
+      "Tableau nutritionnel source omis : taille de portion absente. Congélation minimale de 24 heures conservée en texte, aucun temps total ni durée de cuisson du lot déduit."
+    ],
+    "adaptations": [
+      "Aucune URL externe fournie : l’issue constitue la référence. Aucun auteur original ni droit de republication confirmé.",
+      "Import sans Recipe complété manuellement; les instructions source intégrales restent dans l’issue, les notes publiées sont reformulées.",
+      "Œufs et panure comptés une fois; huile de cuisson traitée comme produit courant de quantité inconnue. Les mesures de sel et poivre restent visibles.",
+      "Ajout éditorial sourcé : contrôle du poulet haché à 74 °C à cœur (Santé Canada), sans valider le réglage de l’appareil.",
+      "Catégorie Plat principal et tag À la friteuse à air ajoutés. Technique Paner liée sans allocation supplémentaire."
+    ],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Droits du texte inconnus. Référence à la proposition de jobed85 et notes reformulées; aucune licence déduite du dépôt de l’issue.",
+      "photos": "Aucune permission documentée; aucune photo téléchargée ni reprise."
+    },
+    "importId": "import-4fdac852ea03e646",
+    "yieldUnit": "croquettes",
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recettes non cuisinées",
+      "date": "2026-11-01",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
+    },
+    "counts": {
+      "croquettes": 90
+    }
+  }
+}

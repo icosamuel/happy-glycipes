@@ -1,4 +1,38 @@
 {
-  "categories": [{"id":"dejeuner","name":"Déjeuner"},{"id":"accompagnement","name":"Accompagnement"}],
-  "tags": [{"id":"vegetarien","name":"Végétarien"},{"id":"a-la-poele","name":"À la poêle"},{"id":"sans-cuisson","name":"Sans cuisson"}]
+  "categories": [
+    {
+      "id": "dejeuner",
+      "name": "Déjeuner"
+    },
+    {
+      "id": "accompagnement",
+      "name": "Accompagnement"
+    },
+    {
+      "id": "plat-principal",
+      "name": "Plat principal"
+    }
+  ],
+  "tags": [
+    {
+      "id": "vegetarien",
+      "name": "Végétarien"
+    },
+    {
+      "id": "a-la-poele",
+      "name": "À la poêle"
+    },
+    {
+      "id": "sans-cuisson",
+      "name": "Sans cuisson"
+    },
+    {
+      "id": "au-four",
+      "name": "Au four"
+    },
+    {
+      "id": "friteuse-air",
+      "name": "À la friteuse à air"
+    }
+  ]
 }

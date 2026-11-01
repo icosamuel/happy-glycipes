@@ -1,0 +1,25 @@
+{
+  "result": "unchanged",
+  "files": [
+    {
+      "path": "content/recipes/pain-olives.json",
+      "sha256": "2b18e89a015e6c33a46fbc75ddbdc7764d2aee5967b236ec1c38ba99b9060314"
+    },
+    {
+      "path": "content/recipes/croquettes-poulet.json",
+      "sha256": "0872b659b7a3ef2a3b0bc6dbc05f38c656670aca04c280bc924b39eb4b94a889"
+    },
+    {
+      "path": "drafts/import-100038f60a009a5b/recipe.json",
+      "sha256": "2b18e89a015e6c33a46fbc75ddbdc7764d2aee5967b236ec1c38ba99b9060314"
+    },
+    {
+      "path": "drafts/import-4fdac852ea03e646/recipe.json",
+      "sha256": "0872b659b7a3ef2a3b0bc6dbc05f38c656670aca04c280bc924b39eb4b94a889"
+    }
+  ],
+  "comparisons": [
+    "drafts/pain-olives/comparison.json",
+    "drafts/croquettes-poulet/comparison.json"
+  ]
+}
