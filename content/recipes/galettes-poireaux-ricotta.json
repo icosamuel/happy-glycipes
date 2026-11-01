@@ -69,7 +69,8 @@
         "quantity": 80,
         "unit": "ml",
         "note": "1/3 tasse",
-        "sourceLine": "80 ml Farine d’amande — 1/3 tasse"
+        "sourceLine": "80 ml Farine d’amande — 1/3 tasse",
+        "article": "farine-amande"
       },
       {
         "id": "poireau",
@@ -165,6 +166,20 @@
     "adaptations": [
       "Titre normalisé; étapes reformulées; quantités source conservées.",
       "Huile, sel et poivre classés produits courants pour cet usage."
+    ],
+    "allocations": [
+      {
+        "ingredient": "oeuf",
+        "target": "pate",
+        "quantity": 2,
+        "unit": "gros"
+      },
+      {
+        "ingredient": "oeuf",
+        "target": "oeuf-poche",
+        "quantity": 1,
+        "unit": "gros"
+      }
     ]
   },
   "version": 1
