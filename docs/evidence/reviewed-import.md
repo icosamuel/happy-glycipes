@@ -8,4 +8,4 @@ Le rapport initial est conservé dans `cucumber-import-report.json`. Le brouillo
 
 Un deuxième appel à l'importateur produit seulement une comparaison dans `drafts/concombre-citron-menthe/`; l'empreinte du fichier éditorial reste identique. Aucune adaptation ni rubrique n'est écrasée.
 
-Les 19 tests passent avec les deux recettes. Le build génère 16 sorties et vérifie 179 liens internes/assets. Recherche, catégories/tags et liens entrants sont dérivés du contenu ajouté. La preuve de déploiement est consignée dans les issues #7 et #16 après fusion; les vérifications interactives restent distinctes.
+Les 20 tests passent avec les deux recettes. Le build génère 16 sorties et vérifie 179 liens internes/assets. Recherche, catégories/tags et liens entrants sont dérivés du contenu ajouté. Le JSON-LD est dérivé des usages éditoriaux complets (produits courants compris); les lignes source restent une référence de provenance. Une correction de quantité éditoriale modifie donc le JSON-LD, sans réécrire la source. La preuve de déploiement est consignée dans les issues #7 et #16 après fusion; les vérifications interactives restent distinctes.

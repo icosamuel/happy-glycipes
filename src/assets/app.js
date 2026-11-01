@@ -5,8 +5,9 @@ let multiplier=1;
 const pop=document.querySelector('#preview');
 function closePreview(restore=false) {
   if(!pop || pop.hidden)return;
+  const focusedInside=pop.contains(document.activeElement);
   pop.hidden=true;anchor?.setAttribute('aria-expanded','false');
-  if(restore)anchor?.focus();
+  if(restore||focusedInside)anchor?.focus({preventScroll:true});
 }
 function positionPreview() {
   if(!anchor || !pop || pop.hidden)return;
@@ -47,11 +48,11 @@ if(search && results){
       results.replaceChildren();
       for(const entry of matches){const a=document.createElement('a');a.href=entry.url;a.textContent=`${entry.name} · ${entry.type}`;results.append(a)}
       if(!matches.length)results.textContent='Aucun résultat. Essayez un ingrédient ou parcourez les rubriques.';
-    }catch{results.textContent='Recherche indisponible. Parcourez les rubriques dans la navigation.';indexPromise=undefined}
+    }catch{indexPromise=undefined;if(query!==search.value)return;results.textContent='Recherche indisponible. Parcourez les rubriques dans la navigation.'}
     results.hidden=false;search.setAttribute('aria-expanded','true');
   });
   search.addEventListener('keydown',event=>{
-    if(['ArrowDown','Enter'].includes(event.key) && results.querySelector('a')){event.preventDefault();results.querySelector('a').focus()}
+    if(['ArrowDown','Enter'].includes(event.key) && !results.hidden && results.querySelector('a')){event.preventDefault();results.querySelector('a').focus()}
     if(event.key==='Escape')hideResults();
   });
   results.addEventListener('keydown',event=>{
