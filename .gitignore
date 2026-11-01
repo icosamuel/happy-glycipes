@@ -1,0 +1,8 @@
+# Artefacts locaux de prototypage et profil du navigateur de test
+/keto-qa-v2/
+/*.zip
+__pycache__/
+/.tools/
+/node_modules/
+/_site/
+/happy-glycipes-plan/issues.json
