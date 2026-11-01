@@ -204,6 +204,21 @@
     ],
     "counts": {
       "galettes": 4
+    },
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recette non cuisinée",
+      "date": "2026-11-01",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
     }
   },
   "version": 1
