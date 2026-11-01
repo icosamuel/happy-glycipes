@@ -1,0 +1,49 @@
+name: Prepare recipe proposal
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Numéro de la proposition à autoriser
+        required: true
+        type: string
+      recipe_index:
+        description: Index Recipe si la source en contient plusieurs (à partir de zéro)
+        required: false
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: recipe-proposal-${{ inputs.issue_number }}
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Authorize, import and prepare draft PR
+        run: node scripts/propose.js
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          RECIPE_INDEX: ${{ inputs.recipe_index }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recipe-proposal-${{ inputs.issue_number }}
+          path: proposal-output/
+          if-no-files-found: ignore
+          retention-days: 7
