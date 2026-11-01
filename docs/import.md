@@ -1,5 +1,7 @@
 # Importer une référence
 
+Pour conduire la mission jusqu'à la fusion et à la publication, suivre [la procédure d'ingestion](recipe-ingestion.md). Une recette collée dans une issue peut être structurée manuellement depuis son texte et ses commentaires; l'absence d'URL externe ou de JSON-LD n'est pas un échec bloquant. Consigner ce mode d'ingestion sans fabriquer de données Recipe source.
+
 `npm run import -- --url https://site-public/recette` prépare un dossier `drafts/import-…/` avec `recipe.json`, `source.json` (champs Recipe utiles seulement) et `report.json`. Rien n'est publié. Sans Recipe, le résultat est un brouillon manuel. Une erreur réseau est indiquée avec un code de sortie non nul : réessayer ou compléter manuellement.
 
 Avec plusieurs Recipe, lire la liste puis relancer avec `--recipe INDEX` (index à partir de zéro). Les sections d'étapes et les lignes d'ingrédients originales restent dans la source. Les quantités et correspondances proposées doivent être relues. La nutrition et les images ne sont jamais approuvées par l'importateur.

@@ -1,5 +1,7 @@
 # Livraison M1
 
+Pour les propositions de recettes courantes, suivre [la procédure d'ingestion jusqu'à publication](recipe-ingestion.md) et l'autorisation permanente de [AGENTS.md](../AGENTS.md). Le flux M1 ci-dessous concerne la livraison du milestone; une ingestion ordinaire n'exige pas de créer un nouveau milestone.
+
 Le dépôt ne contenait ni code, ni instructions AGENTS, ni orchestrateur à sa création. Ce document établit le flux de livraison de ses sept tranches existantes, sans remplacer le plan #1.
 
 1. Conserver chaque issue dans le milestone M1 et respecter ses dépendances.
