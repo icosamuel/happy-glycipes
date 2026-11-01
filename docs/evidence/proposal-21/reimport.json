@@ -1,0 +1,25 @@
+{
+  "result": "unchanged",
+  "files": [
+    {
+      "path": "content/recipes/croquettes-poulet.json",
+      "sha256": "213cadc0c922388de914eced9b6f4023ac2beaf2161cd3affb528cf4d9ff9dac"
+    },
+    {
+      "path": "content/recipes/pain-citrouille.json",
+      "sha256": "9bb0543cf9dfea932ec60e33b51144f4e6073702a73c33667e5a3c6c7b4956a2"
+    },
+    {
+      "path": "drafts/import-4fdac852ea03e646/recipe.json",
+      "sha256": "213cadc0c922388de914eced9b6f4023ac2beaf2161cd3affb528cf4d9ff9dac"
+    },
+    {
+      "path": "drafts/import-6386558e6eb75c34/recipe.json",
+      "sha256": "9bb0543cf9dfea932ec60e33b51144f4e6073702a73c33667e5a3c6c7b4956a2"
+    }
+  ],
+  "comparisons": [
+    "drafts/croquettes-poulet/comparison.json",
+    "drafts/pain-citrouille/comparison.json"
+  ]
+}

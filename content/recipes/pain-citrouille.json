@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Pain à la citrouille et aux pépites de chocolat",
+    "description": "Notes reformulées de la proposition #21 de jobed85 : un pain sucré à la purée de citrouille, pour environ 8 portions. Recette non testée.",
+    "author": {
+      "@type": "Person",
+      "name": "jobed85 (proposition; auteur original non confirmé)"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "8",
+    "recipeCategory": "Collation",
+    "totalTime": "PT75M"
+  },
+  "wiki": {
+    "id": "pain-citrouille",
+    "status": "published",
+    "experience": "non testé",
+    "sourceUrl": "https://github.com/icosamuel/happy-glycipes/issues/21",
+    "canonicalUrl": "https://github.com/icosamuel/happy-glycipes/issues/21",
+    "originalUrl": "https://github.com/icosamuel/happy-glycipes/issues/21",
+    "importedAt": "2026-11-01T20:49:21.451Z",
+    "importerVersion": "1.0.0",
+    "tags": [
+      "Au four"
+    ],
+    "ingredients": [
+      {
+        "id": "citrouille",
+        "name": "Purée de citrouille",
+        "quantity": 1,
+        "unit": "tasse",
+        "note": "Type et teneur en eau non précisés; aucune masse déduite.",
+        "sourceLine": "1 tasse purée de citrouille",
+        "article": "puree-citrouille"
+      },
+      {
+        "id": "oeufs",
+        "name": "Œufs",
+        "quantity": 3,
+        "unit": "",
+        "note": "Calibre non précisé.",
+        "sourceLine": "3 œufs"
+      },
+      {
+        "id": "amande",
+        "name": "Farine d’amande",
+        "quantity": 2,
+        "unit": "tasses",
+        "note": "Mouture non précisée; aucune conversion en grammes.",
+        "sourceLine": "2 tasses farine d’amande",
+        "article": "farine-amande"
+      },
+      {
+        "id": "edulcorant",
+        "name": "Édulcorant type Swerve",
+        "quantity": 0.25,
+        "unit": "tasse",
+        "note": "Formulation et forme exacte non précisées; aucun remplacement validé.",
+        "sourceLine": "1/4 tasse édulcorant type Swerve"
+      },
+      {
+        "id": "levure",
+        "name": "Poudre à pâte",
+        "quantity": 1.5,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1 1/2 c. à thé poudre à pâte"
+      },
+      {
+        "id": "bicarbonate",
+        "name": "Bicarbonate de soude",
+        "quantity": 0.75,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "3/4 c. à thé bicarbonate de soude"
+      },
+      {
+        "id": "epices",
+        "name": "Épices à citrouille",
+        "quantity": 1.5,
+        "unit": "c. à thé",
+        "note": "Mélange non détaillé dans la proposition.",
+        "sourceLine": "1 1/2 c. à thé épices à citrouille"
+      },
+      {
+        "id": "cannelle",
+        "name": "Cannelle",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "Ajout distinct du mélange d’épices; ne pas le retrancher sans essai.",
+        "sourceLine": "1/2 c. à thé cannelle"
+      },
+      {
+        "id": "sel",
+        "name": "Sel",
+        "quantity": 0.25,
+        "unit": "c. à thé",
+        "note": "Produit courant mesuré, conservé dans la liste à prévoir.",
+        "sourceLine": "1/4 c. à thé sel"
+      },
+      {
+        "id": "chocolat",
+        "name": "Pépites de chocolat sans sucre",
+        "quantity": 0.5,
+        "unit": "tasse",
+        "note": "Composition du produit non documentée; aucune teneur en glucides supposée.",
+        "sourceLine": "1/2 tasse pépites de chocolat sans sucre"
+      },
+      {
+        "id": "graines",
+        "name": "Graines de citrouille (pepitas)",
+        "quantity": 3,
+        "unit": "c. à soupe",
+        "note": "Réserver pour le dessus du pain.",
+        "sourceLine": "3 c. à soupe graines de citrouille (pepitas)"
+      },
+      {
+        "id": "enduit",
+        "name": "Enduit à cuisson",
+        "quantity": null,
+        "unit": "",
+        "note": "Pour graisser le moule; quantité inconnue.",
+        "sourceLine": "Enduit à cuisson",
+        "pantry": true
+      }
+    ],
+    "sourceIngredients": [
+      "1 tasse purée de citrouille",
+      "3 œufs",
+      "2 tasses farine d’amande",
+      "1/4 tasse édulcorant type Swerve",
+      "1 1/2 c. à thé poudre à pâte",
+      "3/4 c. à thé bicarbonate de soude",
+      "1 1/2 c. à thé épices à citrouille",
+      "1/2 c. à thé cannelle",
+      "1/4 c. à thé sel",
+      "1/2 tasse pépites de chocolat sans sucre",
+      "3 c. à soupe graines de citrouille (pepitas)",
+      "Enduit à cuisson"
+    ],
+    "steps": [
+      {
+        "name": "Préparer le moule",
+        "text": "Chauffer le four à 175 °C (350 °F) et graisser un moule à pain avec l’enduit à cuisson. Les dimensions du moule ne sont pas précisées dans la proposition."
+      },
+      {
+        "name": "Mélanger les ingrédients secs",
+        "text": "Réunir la {{article:farine-amande}}, l’édulcorant, la poudre à pâte, le bicarbonate, les épices à citrouille, la cannelle et le sel. Garder les pépites et les graines à part."
+      },
+      {
+        "name": "Former la pâte",
+        "text": "Ajouter les œufs et la {{article:puree-citrouille}} au mélange sec. Remuer pour obtenir une pâte homogène, puis y répartir les pépites de chocolat."
+      },
+      {
+        "name": "Garnir et cuire",
+        "text": "Transférer la pâte dans le moule graissé. Répartir les graines de citrouille sur le dessus. La proposition annonce environ 45 à 55 minutes de cuisson, jusqu’à ce qu’un cure-dent inséré au centre ressorte propre. Vérifier selon le moule et le four."
+      },
+      {
+        "name": "Refroidir et partager",
+        "text": "Laisser refroidir avant de trancher et de répartir selon le rendement choisi. La durée du refroidissement reste à préciser."
+      }
+    ],
+    "sourceInstructions": [],
+    "sourceYield": "environ 8 portions",
+    "dependencies": [],
+    "allocations": [],
+    "warnings": [
+      "Recette non cuisinée; conformité keto non évaluée. Le nom de la proposition ne constitue pas une validation nutritionnelle.",
+      "Estimations nutritionnelles de l’issue non reprises : méthode de calcul et références des produits inconnues. Aucune valeur recalculée.",
+      "Rendement annoncé : environ 8 portions pour un pain, sans masse ni taille de portion définie.",
+      "Moule, calibre des œufs, texture de la purée, mouture de la farine, formulation de l’édulcorant et composition des pépites sans sucre non précisés.",
+      "Cuisson annoncée : environ 45 à 55 minutes. Temps total annoncé : environ 1 h 15; répartition préparation/refroidissement non détaillée. Le refroidissement n’est pas chronométré.",
+      "Cannelle et mélange d’épices conservés comme deux usages distincts; la composition du mélange n’est pas donnée."
+    ],
+    "adaptations": [
+      "Source : texte intégral de l’issue #21, sans URL externe ni auteur original confirmé. Import sans Recipe complété manuellement; notes reformulées et source intégrale conservée dans l’issue.",
+      "Mesures en tasses et cuillères conservées; aucune densité extrapolée. Œufs et ingrédients comptés une fois; graines réservées à la garniture, sans ajout de préparation liée.",
+      "Enduit à cuisson classé produit courant de quantité inconnue; le sel mesuré reste visible. Aucune préparation liée ni allocation supplémentaire.",
+      "Catégorie Collation et tag Au four choisis après relecture. Liens farine d’amande et purée de citrouille validés.",
+      "Temps total source approximatif conservé sous PT75M; cuisson en fourchette laissée dans les étapes. Aucun temps de préparation inventé."
+    ],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Droits du texte inconnus. Référence à la proposition de jobed85 et notes reformulées; aucune permission de republication intégrale présumée.",
+      "photos": "Aucune permission photographique documentée; aucune photo téléchargée ni reprise."
+    },
+    "importId": "import-6386558e6eb75c34",
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recettes non cuisinées",
+      "date": "2026-11-01",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
+    }
+  }
+}

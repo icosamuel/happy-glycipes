@@ -11,6 +11,10 @@
     {
       "id": "plat-principal",
       "name": "Plat principal"
+    },
+    {
+      "id": "collation",
+      "name": "Collation"
     }
   ],
   "tags": [

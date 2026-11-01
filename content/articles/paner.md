@@ -9,7 +9,7 @@ Les couennes de porc et le supplément de parmesan sont des variantes distinctes
 
 ## Contrôler la cuisson
 
-Pour le poulet haché, vérifier au thermomètre au moins 74 °C au centre. Ce repère ne valide pas un temps ni un réglage de friteuse à air. L’unité de température, l’état des pièces et leur taille restent à préciser dans la proposition.
+Pour le poulet haché, vérifier au thermomètre au moins 74 °C au centre. Ce repère ne valide pas un temps ni un réglage de friteuse à air. Le réglage de la proposition est de 375 °F, selon la confirmation du propriétaire consignée dans [l’issue #20](https://github.com/icosamuel/happy-glycipes/issues/20#issuecomment-6563692693). L’état des pièces, leur taille, la capacité de l’appareil, le nombre de fournées et la durée réelle restent à confirmer.
 
 Source du repère : [Santé Canada — températures internes sécuritaires](https://www.canada.ca/fr/services/sante/publications/aliments-et-nutrition/infographie-temperatures-securitaires-interne.html), consulté le 1er novembre 2026.
 
