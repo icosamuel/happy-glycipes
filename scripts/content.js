@@ -1,6 +1,7 @@
 import {readdirSync, readFileSync} from 'node:fs';
 import {expandStep} from './steps.js';
 import {loadArticles} from './articles.js';
+import {validateEditorial} from './editorial.js';
 export const prefix = '/happy-glycipes/';
 export const origin = 'https://icosamuel.github.io';
 export const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -24,6 +25,7 @@ export function validateRecipe({version, recipe:r, wiki:w}) {
   if(r.nutrition && (!w.nutritionProvenance?.source || w.nutritionProvenance.basis !== 'par portion')) fail('provenance nutrition absente');
   if(w.status === 'published' && (!w.rights?.mode || !w.warnings?.length)) fail('droits ou incertitudes absents');
   if(r.image) fail('photo non autorisée: ajouter un contrat média avant publication');
+  validateEditorial(w);
   return true;
 }
 export function loadRecipes(dir='content/recipes') {
@@ -34,5 +36,5 @@ export function loadRecipes(dir='content/recipes') {
 }
 export function recipeJsonLd(d) {
   const articles=loadArticles();
-  return {...d.recipe, recipeInstructions:d.wiki.steps.map(s=>({'@type':'HowToStep',name:s.name,text:expandStep(s.text,d.wiki,{link:id=>{const article=articles.find(a=>a.id===id);if(!article)throw Error(`Rubrique inconnue: ${id}`);return article.name}})})), recipeIngredient: d.wiki.sourceIngredients, url: origin+prefix+'recettes/'+d.wiki.id+'/', isBasedOn:d.wiki.sourceUrl};
+  return {...d.recipe, ...(d.wiki.media?.length?{image:d.wiki.media.map(m=>origin+prefix+m.path)}:{}), recipeInstructions:d.wiki.steps.map(s=>({'@type':'HowToStep',name:s.section?`${s.section} — ${s.name}`:s.name,text:expandStep(s.text,d.wiki,{link:id=>{const article=articles.find(a=>a.id===id);if(!article)throw Error(`Rubrique inconnue: ${id}`);return article.name}})})), recipeIngredient: d.wiki.sourceIngredients, url: origin+prefix+'recettes/'+d.wiki.id+'/', isBasedOn:d.wiki.sourceUrl};
 }
