@@ -38,6 +38,6 @@ export function validateRelations(recipes,articles) {
   }
 }
 // Included allocations partition the declared usage; external allocations add only their explicit amount.
-export function plannedIngredients(w) {
-  return w.ingredients.map(i=>({...i,quantity:i.quantity===null?null:i.quantity+(w.dependencies??[]).filter(d=>d.usesIngredient===i.id && !d.includedInIngredientTotal).reduce((n,d)=>n+d.quantity,0)})).filter(i=>!i.pantry);
+export function plannedIngredients(w,{includePantry=false}={}) {
+  return w.ingredients.map(i=>({...i,quantity:i.quantity===null?null:i.quantity+(w.dependencies??[]).filter(d=>d.usesIngredient===i.id && !d.includedInIngredientTotal).reduce((n,d)=>n+d.quantity,0)})).filter(i=>includePantry||!i.pantry);
 }

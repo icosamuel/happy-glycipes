@@ -4,7 +4,7 @@ import {validateMedia,validateEditorial} from '../scripts/editorial.js';
 import {loadRecipes,validateRecipe,recipeJsonLd} from '../scripts/content.js';
 import {recipePage} from '../src/pages.11ty.js';
 test('publication exige une relecture explicite et conserve l’ambiguïté témoin',()=>{
-  const d=loadRecipes()[0];assert.ok(d.wiki.warnings.some(w=>w.includes('2 portions')));
+  const d=loadRecipes().find(d=>d.wiki.id==='galettes-poireaux-ricotta');assert.ok(d.wiki.warnings.some(w=>w.includes('2 portions')));
   const w=structuredClone(d.wiki);delete w.review;assert.throws(()=>validateEditorial(w),/relecture/);
   assert.equal(recipeJsonLd(d).nutrition.carbohydrateContent,undefined);
 });
@@ -17,7 +17,7 @@ test('photo: permission documentée acceptée; crédit, permission, fichier et c
   assert.throws(()=>validateMedia({...media,path:'../secret.jpg'},{exists:()=>true}),/chemin/);
 });
 test('texte hostile reste du texte et une quantité structurée manquante bloque',()=>{
-  const d=structuredClone(loadRecipes()[0]);d.recipe.name='</script><img onerror=evil()>';d.wiki.steps[0].text='<img src=x onerror=evil()>';
+  const d=structuredClone(loadRecipes().find(d=>d.wiki.id==='galettes-poireaux-ricotta'));d.recipe.name='</script><img onerror=evil()>';d.wiki.steps[0].text='<img src=x onerror=evil()>';
   const rendered=recipePage(d);
   assert.ok(!rendered.includes('<img onerror=evil()>'));assert.ok(rendered.includes('&lt;img src=x onerror=evil()&gt;'));
   d.wiki.steps[0].text='Texte et {{ingredient:absent}}';

@@ -96,18 +96,56 @@
         "unit": "",
         "note": "une pincée",
         "sourceLine": "Sel, poivre, muscade — au goût"
+      },
+      {
+        "id": "huile-poele",
+        "name": "Huile pour la poêle",
+        "quantity": null,
+        "unit": "",
+        "note": "Une petite quantité pour graisser.",
+        "sourceLine": "Huile en vaporisateur — pour la poêle",
+        "pantry": true
+      },
+      {
+        "id": "sel",
+        "name": "Sel",
+        "quantity": null,
+        "unit": "",
+        "note": "Au goût.",
+        "sourceLine": "Sel, poivre, muscade — au goût",
+        "pantry": true
+      },
+      {
+        "id": "poivre",
+        "name": "Poivre",
+        "quantity": null,
+        "unit": "",
+        "note": "Au goût.",
+        "sourceLine": "Sel, poivre, muscade — au goût",
+        "pantry": true
+      },
+      {
+        "id": "eau",
+        "name": "Eau",
+        "quantity": null,
+        "unit": "",
+        "note": "Pour le pochage.",
+        "sourceLine": "Préparation liée : œuf poché",
+        "pantry": true
+      },
+      {
+        "id": "vinaigre",
+        "name": "Vinaigre",
+        "quantity": null,
+        "unit": "",
+        "note": "Petite quantité facultative pour le pochage.",
+        "sourceLine": "Préparation liée : œuf poché",
+        "pantry": true
       }
     ],
     "warnings": [
       "La source prévoit 2 portions et 1 seul œuf poché. Quantités conservées.",
       "Nutrition déclarée par la source, non recalculée."
-    ],
-    "pantry": [
-      "Huile pour la poêle",
-      "Sel",
-      "Poivre",
-      "Eau",
-      "Vinaigre pour le pochage"
     ],
     "dependencies": [
       {
