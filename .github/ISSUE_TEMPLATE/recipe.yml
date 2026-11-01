@@ -1,0 +1,25 @@
+name: Proposer une recette
+description: Proposer une URL publique à importer et relire.
+title: "Recette proposée : "
+body:
+  - type: markdown
+    attributes:
+      value: Un mainteneur autorisera l'import. Aucun contenu n'est publié automatiquement. Ne partagez pas d'information privée.
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Une URL HTTPS publique, sans authentification.
+      placeholder: https://exemple.com/recette
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Intérêt de la recette, adaptations souhaitées, ambiguïtés connues.
+  - type: textarea
+    id: rights
+    attributes:
+      label: Droits connus
+      description: Auteur, permission de texte et de photos séparément. L'absence de permission ne vaut pas autorisation.
