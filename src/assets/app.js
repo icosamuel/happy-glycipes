@@ -1,3 +1,4 @@
+import {searchIndex,matchesFilters} from './search.js';
 let anchor;
 const pop=document.querySelector('#preview');
 function closePreview(restore=false) {
@@ -29,3 +30,54 @@ document.addEventListener('click',event=>{
 });
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closePreview(true)});
 addEventListener('resize',positionPreview);addEventListener('scroll',positionPreview,true);
+
+const search=document.querySelector('#search'),results=document.querySelector('#results');
+let indexPromise;
+function hideResults(){results.hidden=true;search.setAttribute('aria-expanded','false')}
+if(search && results){
+  search.addEventListener('input',async()=>{
+    const query=search.value;
+    if(!query.trim()){results.replaceChildren();hideResults();return}
+    indexPromise??=fetch(new URL('../search-index.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('index');return r.json()});
+    try {
+      const matches=searchIndex(await indexPromise,query);
+      if(query!==search.value)return;
+      results.replaceChildren();
+      for(const entry of matches){const a=document.createElement('a');a.href=entry.url;a.textContent=`${entry.name} · ${entry.type}`;results.append(a)}
+      if(!matches.length)results.textContent='Aucun résultat. Essayez un ingrédient ou parcourez les rubriques.';
+    }catch{results.textContent='Recherche indisponible. Parcourez les rubriques dans la navigation.';indexPromise=undefined}
+    results.hidden=false;search.setAttribute('aria-expanded','true');
+  });
+  search.addEventListener('keydown',event=>{
+    if(['ArrowDown','Enter'].includes(event.key) && results.querySelector('a')){event.preventDefault();results.querySelector('a').focus()}
+    if(event.key==='Escape')hideResults();
+  });
+  results.addEventListener('keydown',event=>{
+    const links=[...results.querySelectorAll('a')],pos=links.indexOf(document.activeElement);
+    if(event.key==='Escape'){hideResults();search.focus()}
+    if(event.key==='ArrowDown'){event.preventDefault();links[(pos+1)%links.length]?.focus()}
+    if(event.key==='ArrowUp'){event.preventDefault();if(pos<=0)search.focus();else links[pos-1]?.focus()}
+  });
+  document.addEventListener('click',event=>{if(!event.target.closest('.header-search'))hideResults()});
+}
+
+const filterForm=document.querySelector('#filters');
+if(filterForm){
+  function applyFilters(){
+    const params=new URLSearchParams(location.search),category=params.get('categorie')??'',tag=params.get('tag')??'';
+    filterForm.elements.categorie.value=category;filterForm.elements.tag.value=tag;
+    let count=0;
+    for(const card of document.querySelectorAll('[data-recipe-card]')){
+      card.hidden=!matchesFilters({category:card.dataset.category,tags:JSON.parse(card.dataset.tags)},category,tag);
+      if(!card.hidden)count++;
+    }
+    document.querySelector('#filter-status').textContent=count?`${count} recette(s)`:'Aucune recette avec ces filtres.';
+  }
+  filterForm.addEventListener('submit',event=>{
+    event.preventDefault();const params=new URLSearchParams(new FormData(filterForm));
+    for(const [key,value] of [...params])if(!value)params.delete(key);
+    history.pushState(null,'',location.pathname+(params.size?'?'+params:''));applyFilters();
+  });
+  document.querySelector('#clear-filters').addEventListener('click',()=>{history.pushState(null,'',location.pathname);applyFilters()});
+  addEventListener('popstate',applyFilters);applyFilters();
+}
