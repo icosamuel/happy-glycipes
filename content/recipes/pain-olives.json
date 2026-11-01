@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Pain aux olives",
+    "description": "Notes reformulées de la proposition #19 de jobed85. Rendement annoncé : 1 petit pain — environ 12 tranches. Recette non testée.",
+    "author": {
+      "@type": "Person",
+      "name": "jobed85 (proposition; auteur original non confirmé)"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "12",
+    "recipeCategory": "Accompagnement"
+  },
+  "wiki": {
+    "id": "pain-olives",
+    "status": "published",
+    "experience": "non testé",
+    "sourceUrl": "https://github.com/icosamuel/happy-glycipes/issues/19",
+    "canonicalUrl": "https://github.com/icosamuel/happy-glycipes/issues/19",
+    "originalUrl": "https://github.com/icosamuel/happy-glycipes/issues/19",
+    "importedAt": "2026-11-01T20:31:50.928Z",
+    "importerVersion": "1.0.0",
+    "tags": [
+      "Au four"
+    ],
+    "ingredients": [
+      {
+        "id": "amande",
+        "name": "Farine d’amande",
+        "quantity": 200,
+        "unit": "g",
+        "note": "Masse source retenue; les 2 tasses sont une équivalence déclarée, pas un second usage.",
+        "sourceLine": "2 tasses (200 g) de farine d’amande",
+        "article": "farine-amande"
+      },
+      {
+        "id": "psyllium",
+        "name": "Psyllium en poudre fine",
+        "quantity": 25,
+        "unit": "g",
+        "note": "Équivalence source : 1/4 tasse.",
+        "sourceLine": "1/4 tasse (25 g) de psyllium en poudre fine",
+        "article": "psyllium"
+      },
+      {
+        "id": "parmesan",
+        "name": "Parmesan râpé",
+        "quantity": 30,
+        "unit": "g",
+        "note": "Équivalence source : 1/3 tasse.",
+        "sourceLine": "1/3 tasse (30 g) de parmesan râpé"
+      },
+      {
+        "id": "levure",
+        "name": "Poudre à pâte",
+        "quantity": 2,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "2 c. à thé de poudre à pâte"
+      },
+      {
+        "id": "sel",
+        "name": "Sel",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "Produit courant mesuré, conservé dans À prévoir.",
+        "sourceLine": "1/2 c. à thé de sel"
+      },
+      {
+        "id": "origan",
+        "name": "Origan séché",
+        "quantity": 1,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1 c. à thé d’origan séché"
+      },
+      {
+        "id": "herbe",
+        "name": "Romarin ou thym",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "Choisir une herbe; état frais ou séché non précisé pour cette ligne.",
+        "sourceLine": "1/2 c. à thé de romarin ou thym"
+      },
+      {
+        "id": "oeufs",
+        "name": "Œufs",
+        "quantity": 5,
+        "unit": "",
+        "note": "Calibre non précisé.",
+        "sourceLine": "5 œufs"
+      },
+      {
+        "id": "huile",
+        "name": "Huile d’olive",
+        "quantity": 60,
+        "unit": "ml",
+        "note": "Équivalence source : 1/4 tasse.",
+        "sourceLine": "1/4 tasse (60 ml) d’huile d’olive"
+      },
+      {
+        "id": "eau",
+        "name": "Eau chaude",
+        "quantity": 125,
+        "unit": "ml",
+        "note": "Produit courant mesuré; incorporer progressivement.",
+        "sourceLine": "1/2 tasse (125 ml) d’eau chaude"
+      },
+      {
+        "id": "vinaigre",
+        "name": "Vinaigre de cidre",
+        "quantity": 1,
+        "unit": "c. à soupe",
+        "note": "",
+        "sourceLine": "1 c. à soupe de vinaigre de cidre"
+      },
+      {
+        "id": "olives",
+        "name": "Olives mélangées",
+        "quantity": 0.75,
+        "unit": "tasse",
+        "note": "Égoutter, éponger et hacher; aucune masse supposée.",
+        "sourceLine": "3/4 tasse d’olives mélangées hachées grossièrement"
+      }
+    ],
+    "sourceIngredients": [
+      "2 tasses (200 g) de farine d’amande",
+      "1/4 tasse (25 g) de psyllium en poudre fine",
+      "1/3 tasse (30 g) de parmesan râpé",
+      "2 c. à thé de poudre à pâte",
+      "1/2 c. à thé de sel",
+      "1 c. à thé d’origan séché",
+      "1/2 c. à thé de romarin ou thym",
+      "5 œufs",
+      "1/4 tasse (60 ml) d’huile d’olive",
+      "1/2 tasse (125 ml) d’eau chaude",
+      "1 c. à soupe de vinaigre de cidre",
+      "3/4 tasse d’olives mélangées hachées grossièrement"
+    ],
+    "steps": [
+      {
+        "name": "Préparer le four et les olives",
+        "text": "Chauffer le four à 175 °C (350 °F), comme indiqué dans la proposition, et chemiser un moule à pain. Égoutter les olives, les sécher puis les hacher. La taille du moule reste à confirmer."
+      },
+      {
+        "name": "Réunir les ingrédients secs",
+        "text": "Répartir la {{article:farine-amande}}, le {{article:psyllium}}, le parmesan, la poudre à pâte, le sel et les herbes dans un bol. Mélanger pour homogénéiser."
+      },
+      {
+        "name": "Hydrater la pâte",
+        "text": "Battre les œufs avec l’huile et le vinaigre. Les réunir au mélange sec, puis verser progressivement l’eau chaude en remuant; surveiller l’épaississement. Ajouter les olives."
+      },
+      {
+        "name": "Cuire et refroidir",
+        "text": "Transférer dans le moule chemisé. La proposition indique 45 à 55 minutes au four; vérifier la cuisson selon le moule. Patienter au moins 30 minutes avant de découper le pain en environ 12 tranches."
+      }
+    ],
+    "sourceInstructions": [],
+    "sourceYield": "1 petit pain — environ 12 tranches",
+    "dependencies": [],
+    "allocations": [],
+    "warnings": [
+      "Recette non cuisinée; conformité keto non évaluée.",
+      "Estimations nutritionnelles de la proposition non reprises : méthode de calcul non documentée, aucune validation ni recalcul.",
+      "Rendement : un petit pain, environ 12 tranches, et non 12 portions repas. Taille du moule, calibre des œufs et température de l’eau non précisés.",
+      "Options hors provisions de base : 2 c. à soupe de tomates séchées hachées, 1 c. à soupe de romarin frais, feta en quantité inconnue. Elles ne sont pas ajoutées automatiquement.",
+      "Aucune durée totale déduite de la cuisson et du refroidissement; préparation non chronométrée."
+    ],
+    "adaptations": [
+      "Aucune URL externe fournie : l’issue constitue la référence. Aucun auteur original ni droit de republication confirmé.",
+      "Import sans Recipe complété manuellement; les instructions source intégrales restent dans l’issue, les notes publiées sont reformulées.",
+      "Masses et volumes explicitement donnés retenus sans conversion supplémentaire ni double comptage.",
+      "Aucune préparation liée à ajouter. Lien psyllium et farine d’amande validé. Tag Au four; aucun tag keto ou végétarien supposé (parmesan non caractérisé)."
+    ],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Droits du texte inconnus. Référence à la proposition de jobed85 et notes reformulées; aucune licence déduite du dépôt de l’issue.",
+      "photos": "Aucune permission documentée; aucune photo téléchargée ni reprise."
+    },
+    "importId": "import-100038f60a009a5b",
+    "yieldUnit": "tranches",
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recettes non cuisinées",
+      "date": "2026-11-01",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
+    }
+  }
+}

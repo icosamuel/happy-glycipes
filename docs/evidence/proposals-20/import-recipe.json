@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Recette à documenter",
+    "description": "",
+    "author": {
+      "@type": "Person",
+      "name": "Auteur à identifier"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": null,
+    "recipeCategory": null
+  },
+  "wiki": {
+    "id": "import-4fdac852ea03e646",
+    "status": "draft",
+    "experience": "non testé",
+    "sourceUrl": "https://github.com/icosamuel/happy-glycipes/issues/20",
+    "canonicalUrl": "https://github.com/icosamuel/happy-glycipes/issues/20",
+    "originalUrl": "https://github.com/icosamuel/happy-glycipes/issues/20",
+    "importedAt": "2026-11-01T20:31:51.620Z",
+    "importerVersion": "1.0.0",
+    "tags": [],
+    "ingredients": [],
+    "sourceIngredients": [],
+    "steps": [],
+    "sourceInstructions": [],
+    "sourceYield": "",
+    "dependencies": [],
+    "allocations": [],
+    "warnings": [
+      "Brouillon : conformité keto, nutrition, portions et droits à relire.",
+      "Aucun Recipe exploitable. Compléter manuellement depuis la référence; aucune publication automatique.",
+      "Étapes manquantes.",
+      "Portions non normalisées : absentes"
+    ],
+    "adaptations": [],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Permission non établie : référence et notes seulement.",
+      "photos": "Permission non établie : aucune photo téléchargée."
+    }
+  }
+}
