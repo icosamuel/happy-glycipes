@@ -1,0 +1,4 @@
+{
+  "categories": [{"id":"dejeuner","name":"Déjeuner"},{"id":"accompagnement","name":"Accompagnement"}],
+  "tags": [{"id":"vegetarien","name":"Végétarien"},{"id":"a-la-poele","name":"À la poêle"},{"id":"sans-cuisson","name":"Sans cuisson"}]
+}
