@@ -136,7 +136,7 @@
       },
       {
         "name": "Cuire avec contrôle à cœur",
-        "text": "Appliquer un voile d’huile sur les deux faces. Cuire en plusieurs fournées selon la capacité de la friteuse à air. La proposition annonce « 375° » sans unité et 22 minutes : réglage et durée à confirmer pour la taille et l’état des pièces, aucune conversion imposée. Contrôler au thermomètre une température à cœur d’au moins 74 °C pour le poulet haché; la coloration de la panure ne suffit pas. Voir la rubrique Paner pour la référence de Santé Canada."
+        "text": "Appliquer un voile d’huile sur les deux faces. Régler la friteuse à air à 375 °F, unité confirmée par le propriétaire. Cuire en plusieurs fournées selon la capacité de l’appareil. La proposition indique 22 minutes : durée à confirmer selon la taille et l’état des pièces. Contrôler au thermomètre une température à cœur d’au moins 74 °C pour le poulet haché; la coloration de la panure ne suffit pas. Voir la rubrique Paner pour la référence de Santé Canada."
       }
     ],
     "sourceInstructions": [],
@@ -147,7 +147,7 @@
       "Recette non cuisinée; conformité keto non évaluée.",
       "Estimations nutritionnelles de la proposition non reprises : méthode de calcul non documentée, aucune validation ni recalcul.",
       "Rendement annoncé : environ 90 croquettes pour 4 kg de poulet. Nombre de portions repas et masse finale inconnus. Les quantités d’œufs et de panure représentent les provisions, pas leur absorption.",
-      "Cuisson non validée : unité de 375°, état congelé ou décongelé au moment de cuire, taille des pièces, capacité de l’appareil et nombre de fournées à confirmer. Les 22 minutes ne garantissent pas la cuisson à cœur.",
+      "Cuisson non validée : état congelé ou décongelé au moment de cuire, taille des pièces, capacité de l’appareil et nombre de fournées à confirmer. Les 22 minutes ne garantissent pas la cuisson à cœur.",
       "Option hors base : 1 à 2 c. à thé de Cayenne. Variante croustillante : soit 150 à 200 g de couennes broyées, soit 200 g de parmesan en plus des 450 g de base; ne pas additionner les deux variantes par défaut.",
       "Sauces suggérées, hors provisions et sans quantités : mayonnaise–sriracha, mayonnaise–miel–moutarde, yogourt grec–citron–ail. Aucune préparation liée ajoutée ni conformité keto supposée pour ces sauces.",
       "Tableau nutritionnel source omis : taille de portion absente. Congélation minimale de 24 heures conservée en texte, aucun temps total ni durée de cuisson du lot déduit."
@@ -157,7 +157,8 @@
       "Import sans Recipe complété manuellement; les instructions source intégrales restent dans l’issue, les notes publiées sont reformulées.",
       "Œufs et panure comptés une fois; huile de cuisson traitée comme produit courant de quantité inconnue. Les mesures de sel et poivre restent visibles.",
       "Ajout éditorial sourcé : contrôle du poulet haché à 74 °C à cœur (Santé Canada), sans valider le réglage de l’appareil.",
-      "Catégorie Plat principal et tag À la friteuse à air ajoutés. Technique Paner liée sans allocation supplémentaire."
+      "Catégorie Plat principal et tag À la friteuse à air ajoutés. Technique Paner liée sans allocation supplémentaire.",
+      "Précision du propriétaire le 1er novembre 2026 : 375° signifie 375 °F. Confirmation consignée dans https://github.com/icosamuel/happy-glycipes/issues/20#issuecomment-6563692693 . Les autres incertitudes et la durée non validée sont conservées."
     ],
     "rights": {
       "mode": "reference-notes",

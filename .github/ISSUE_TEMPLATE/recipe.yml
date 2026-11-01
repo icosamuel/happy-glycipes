@@ -1,42 +1,18 @@
 name: Proposer une recette
-description: Proposer une recette par URL publique ou en collant son texte.
+description: Proposer une URL publique à importer et relire.
 title: "Recette proposée : "
 body:
   - type: markdown
     attributes:
-      value: Fournissez une URL publique ou collez la recette complète ci-dessous. Cette proposition crée seulement une issue. Le propriétaire déclenchera ensuite un agent pour l'ingestion. Aucun import ni publication automatique. Ne partagez pas d'information privée.
+      value: Cette proposition crée seulement une issue. Le propriétaire déclenchera ensuite un agent pour l'ingestion. Aucun import ni publication automatique. Ne partagez pas d'information privée.
   - type: input
     id: url
     attributes:
       label: URL
-      description: Une URL HTTPS publique, sans authentification. Facultative si vous collez la recette ci-dessous.
+      description: Une URL HTTPS publique, sans authentification.
       placeholder: https://exemple.com/recette
     validations:
-      required: false
-  - type: textarea
-    id: recipe
-    attributes:
-      label: Recette complète
-      description: Collez la recette ici si elle n'a pas d'URL publique. Incluez les ingrédients, les quantités et les étapes, ainsi que les portions, les temps et les températures si connus. Le Markdown est accepté.
-      placeholder: |
-        ## Nom de la recette
-
-        Portions :
-
-        ### Ingrédients
-        - Quantité et ingrédient
-
-        ### Préparation
-        1. Première étape
-    validations:
-      required: false
-  - type: checkboxes
-    id: source-provided
-    attributes:
-      label: Source de la recette
-      options:
-        - label: J'ai fourni une URL publique ou collé la recette complète ci-dessus.
-          required: true
+      required: true
   - type: textarea
     id: notes
     attributes:
