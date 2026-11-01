@@ -9,7 +9,7 @@ for(const file of files('_site').filter(f=>f.endsWith('.html'))){
     if(!target.startsWith('/'))continue;
     if(!target.startsWith(prefix))throw Error(`${file}: préfixe incorrect: ${target}`);
     const relative=target.slice(prefix.length).split(/[?#]/)[0];
-    const path=join('_site',relative)+(relative.endsWith('/')||!relative?'index.html':'');
+    const path=join('_site',relative,...(relative.endsWith('/')||!relative?['index.html']:[]));
     if(!existsSync(path))throw Error(`${file}: lien cassé: ${target}`);
     count++;
   }
