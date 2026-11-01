@@ -1,4 +1,6 @@
 import {readdirSync, readFileSync} from 'node:fs';
+import {expandStep} from './steps.js';
+import {loadArticles} from './articles.js';
 export const prefix = '/happy-glycipes/';
 export const origin = 'https://icosamuel.github.io';
 export const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -9,7 +11,8 @@ export function validateRecipe({version, recipe:r, wiki:w}) {
   if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(w?.id)) fail('identifiant invalide');
   if(!['draft','ready','published'].includes(w.status)) fail('état éditorial invalide');
   if(!/^https:\/\//.test(w.sourceUrl) || !r.author?.name) fail('source/auteur absent');
-  if(!r.recipeInstructions?.length || !r.recipeInstructions.every(s => s.text || s.itemListElement)) fail('instructions absentes');
+  if(!w.steps?.length || !w.steps.every(s => typeof s.text==='string' && s.text.trim())) fail('instructions absentes');
+  for(const s of w.steps)expandStep(s.text,w);
   if(!Number.isFinite(Number(r.recipeYield)) || Number(r.recipeYield)<=0) fail('portions non numériques');
   if(!w.ingredients?.length || !w.sourceIngredients?.length) fail('ingrédients absents');
   const ids = new Set();
@@ -30,5 +33,6 @@ export function loadRecipes(dir='content/recipes') {
   return result;
 }
 export function recipeJsonLd(d) {
-  return {...d.recipe, recipeIngredient: d.wiki.sourceIngredients, url: origin+prefix+'recettes/'+d.wiki.id+'/', isBasedOn:d.wiki.sourceUrl};
+  const articles=loadArticles();
+  return {...d.recipe, recipeInstructions:d.wiki.steps.map(s=>({'@type':'HowToStep',name:s.name,text:expandStep(s.text,d.wiki,{link:id=>{const article=articles.find(a=>a.id===id);if(!article)throw Error(`Rubrique inconnue: ${id}`);return article.name}})})), recipeIngredient: d.wiki.sourceIngredients, url: origin+prefix+'recettes/'+d.wiki.id+'/', isBasedOn:d.wiki.sourceUrl};
 }
