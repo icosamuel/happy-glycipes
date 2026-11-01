@@ -124,7 +124,7 @@
     "steps": [
       {
         "name": "Façonner et congeler",
-        "text": "Hacher le poulet désossé et façonner environ 90 pièces de taille régulière. La proposition prévoit ensuite une congélation d’au moins 24 heures avant la panure. Épaisseur et dimensions non précisées."
+        "text": "Hacher le poulet désossé et façonner environ {{count:croquettes}} pièces de taille régulière. La proposition prévoit ensuite une congélation d’au moins 24 heures avant la panure. Épaisseur et dimensions non précisées."
       },
       {
         "name": "Organiser la panure",
@@ -180,6 +180,9 @@
         "rights": true,
         "ambiguities": true
       }
+    },
+    "counts": {
+      "croquettes": 90
     }
   }
 }

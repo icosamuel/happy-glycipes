@@ -3,19 +3,19 @@
   "files": [
     {
       "path": "content/recipes/pain-olives.json",
-      "sha256": "d54e4be0dde03bda8e5806d0d639939c0c0af26a64d5523e402c8f0e807925e2"
+      "sha256": "2b18e89a015e6c33a46fbc75ddbdc7764d2aee5967b236ec1c38ba99b9060314"
     },
     {
       "path": "content/recipes/croquettes-poulet.json",
-      "sha256": "4197d92d7f937a5900fb55b94df15a87cacb97beb9576ac9acf3c450eab261d6"
+      "sha256": "0872b659b7a3ef2a3b0bc6dbc05f38c656670aca04c280bc924b39eb4b94a889"
     },
     {
       "path": "drafts/import-100038f60a009a5b/recipe.json",
-      "sha256": "d54e4be0dde03bda8e5806d0d639939c0c0af26a64d5523e402c8f0e807925e2"
+      "sha256": "2b18e89a015e6c33a46fbc75ddbdc7764d2aee5967b236ec1c38ba99b9060314"
     },
     {
       "path": "drafts/import-4fdac852ea03e646/recipe.json",
-      "sha256": "4197d92d7f937a5900fb55b94df15a87cacb97beb9576ac9acf3c450eab261d6"
+      "sha256": "0872b659b7a3ef2a3b0bc6dbc05f38c656670aca04c280bc924b39eb4b94a889"
     }
   ],
   "comparisons": [
