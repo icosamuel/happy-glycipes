@@ -41,7 +41,7 @@ test('réimport conserve les corrections et ne crée qu’une comparaison',()=>{
 });
 test('HTTPS et destinations publiques exclusivement, y compris IPv6 et DNS mixte',async()=>{
   for(const url of ['file:///tmp/a','http://example.com','https://localhost','https://127.1/','https://[::1]/','https://user:pass@example.com/','https://example.com:8443/','$(whoami)'])assert.throws(()=>publicUrl(url));
-  for(const ip of ['10.0.0.1','169.254.169.254','100.64.0.1','::ffff:127.0.0.1','fc00::1','2001:db8::1'])assert.equal(isPublicAddress(ip),false,ip);
+  for(const ip of ['10.0.0.1','169.254.169.254','100.64.0.1','::ffff:127.0.0.1','fc00::1','2001:db8::1','2002:7f00:1::','3fff::1'])assert.equal(isPublicAddress(ip),false,ip);
   assert.equal(isPublicAddress('8.8.8.8'),true);assert.equal(isPublicAddress('2606:4700:4700::1111'),true);
   await assert.rejects(publicFetch('https://example.com/',{resolve:async()=>[{address:'8.8.8.8',family:4},{address:'127.0.0.1',family:4}],request:()=>{throw Error('ne doit pas connecter')}}),/DNS privée/);
 });
@@ -52,6 +52,7 @@ test('redirection privée, taille, erreurs HTTP et trop de redirections refusée
   await assert.rejects(publicFetch('https://example.com/',{resolve,request:async()=>({status:503,headers:{},body:''})}),/HTTP 503/);
   await assert.rejects(publicFetch('https://example.com/',{resolve,request:async()=>({status:302,headers:{location:'/again'},body:''})}),/Trop de redirections/);
   await assert.rejects(publicFetch('https://example.com/',{resolve:async()=>{throw Error('DNS unavailable')}}),/DNS unavailable/);
+  await assert.rejects(publicFetch('https://example.com/',{resolve:()=>new Promise(()=>{}),timeout:10}),/Délai DNS/);
   let pinned;
   await publicFetch('https://example.com/',{resolve,request:async(_url,address)=>{pinned=address.address;return {status:200,headers:{},body:'OK'}}});assert.equal(pinned,'8.8.8.8');
 });

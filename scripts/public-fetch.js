@@ -4,7 +4,8 @@ import {BlockList,isIP} from 'node:net';
 export const MAX_BYTES=1_048_576;
 const blocked=new BlockList();
 for(const [base,bits] of [['0.0.0.0',8],['10.0.0.0',8],['100.64.0.0',10],['127.0.0.0',8],['169.254.0.0',16],['172.16.0.0',12],['192.0.0.0',24],['192.0.2.0',24],['192.168.0.0',16],['198.18.0.0',15],['198.51.100.0',24],['203.0.113.0',24],['224.0.0.0',3]])blocked.addSubnet(base,bits,'ipv4');
-blocked.addSubnet('2001::',23,'ipv6');blocked.addSubnet('2001:db8::',32,'ipv6');
+blocked.addSubnet('192.88.99.0',24,'ipv4');
+blocked.addSubnet('2001::',23,'ipv6');blocked.addSubnet('2001:db8::',32,'ipv6');blocked.addSubnet('2002::',16,'ipv6');blocked.addSubnet('3fff::',20,'ipv6');
 const globalV6=new BlockList();globalV6.addSubnet('2000::',3,'ipv6');
 export function isPublicAddress(address){
   const version=isIP(address);
@@ -35,7 +36,9 @@ export async function publicFetch(input,{resolve=host=>lookup(host,{all:true}),r
   let url=publicUrl(input);
   for(let redirects=0;redirects<=3;redirects++){
     const remaining=deadline-Date.now();if(remaining<=0)throw Error('Délai réseau dépassé.');
-    const addresses=await Promise.race([resolve(url.hostname.replace(/^\[|\]$/g,'')),new Promise((_,reject)=>{const t=setTimeout(()=>reject(Error('Délai DNS dépassé.')),remaining);t.unref()})]);
+    let timer,addresses;
+    try{addresses=await Promise.race([resolve(url.hostname.replace(/^\[|\]$/g,'')),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Délai DNS dépassé.')),remaining)})])}
+    finally{clearTimeout(timer)}
     if(!addresses.length||addresses.some(a=>!isPublicAddress(a.address)))throw Error('Destination DNS privée ou réservée refusée.');
     const result=await request(url,addresses[0],Math.max(1,deadline-Date.now()));
     if(Buffer.byteLength(result.body)>MAX_BYTES)throw Error('Page trop volumineuse (1 Mio maximum).');
