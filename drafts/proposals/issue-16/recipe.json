@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Concombre au citron et à la menthe",
+    "description": "Un accompagnement frais, croquant et sans cuisson.",
+    "author": {
+      "@type": "Person",
+      "name": "Happy Glycipes"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "2",
+    "recipeCategory": null,
+    "prepTime": "PT10M"
+  },
+  "wiki": {
+    "id": "import-f236d1fa83f5ace2",
+    "status": "draft",
+    "experience": "non testé",
+    "sourceUrl": "https://raw.githubusercontent.com/icosamuel/happy-glycipes/main/docs/sources/concombre-citron.html",
+    "canonicalUrl": "https://raw.githubusercontent.com/icosamuel/happy-glycipes/main/docs/sources/concombre-citron.html",
+    "originalUrl": "https://raw.githubusercontent.com/icosamuel/happy-glycipes/main/docs/sources/concombre-citron.html",
+    "importedAt": "2026-11-01T20:08:57.278Z",
+    "importerVersion": "1.0.0",
+    "tags": [],
+    "ingredients": [
+      {
+        "id": "usage-1",
+        "name": "concombre",
+        "quantity": 1,
+        "unit": "",
+        "note": "Quantité proposée, à vérifier.",
+        "sourceLine": "1 concombre",
+        "suggestedArticle": "concombre"
+      },
+      {
+        "id": "usage-2",
+        "name": "jus de citron",
+        "quantity": 15,
+        "unit": "ml",
+        "note": "Quantité proposée, à vérifier.",
+        "sourceLine": "15 ml jus de citron"
+      },
+      {
+        "id": "usage-3",
+        "name": "feuilles de menthe",
+        "quantity": 6,
+        "unit": "",
+        "note": "Quantité proposée, à vérifier.",
+        "sourceLine": "6 feuilles de menthe"
+      },
+      {
+        "id": "usage-4",
+        "name": "Sel au goût",
+        "quantity": null,
+        "unit": "",
+        "note": "Quantité inconnue, à relire.",
+        "sourceLine": "Sel au goût"
+      }
+    ],
+    "sourceIngredients": [
+      "1 concombre",
+      "15 ml jus de citron",
+      "6 feuilles de menthe",
+      "Sel au goût"
+    ],
+    "steps": [
+      {
+        "name": "Préparer le concombre",
+        "text": "Laver le concombre et le couper en fines demi-rondelles."
+      },
+      {
+        "name": "Assaisonner",
+        "text": "Mélanger le concombre avec le jus de citron et la menthe ciselée. Saler au goût et servir frais."
+      }
+    ],
+    "sourceInstructions": [
+      {
+        "@type": "HowToStep",
+        "name": "Préparer le concombre",
+        "text": "Laver le concombre et le couper en fines demi-rondelles."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Assaisonner",
+        "text": "Mélanger le concombre avec le jus de citron et la menthe ciselée. Saler au goût et servir frais."
+      }
+    ],
+    "sourceYield": "2",
+    "pantry": [],
+    "dependencies": [],
+    "allocations": [],
+    "warnings": [
+      "Brouillon : conformité keto, nutrition, portions et droits à relire.",
+      "Quantité/unité inconnue : Sel au goût"
+    ],
+    "adaptations": [],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Permission non établie : référence et notes seulement.",
+      "photos": "Permission non établie : aucune photo téléchargée."
+    }
+  }
+}

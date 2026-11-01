@@ -1,0 +1,27 @@
+{
+  "name": "Concombre au citron et à la menthe",
+  "author": {
+    "@type": "Organization",
+    "name": "Happy Glycipes"
+  },
+  "recipeYield": "2",
+  "recipeIngredient": [
+    "1 concombre",
+    "15 ml jus de citron",
+    "6 feuilles de menthe",
+    "Sel au goût"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "name": "Préparer le concombre",
+      "text": "Laver le concombre et le couper en fines demi-rondelles."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Assaisonner",
+      "text": "Mélanger le concombre avec le jus de citron et la menthe ciselée. Saler au goût et servir frais."
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+}
