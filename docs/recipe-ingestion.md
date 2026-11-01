@@ -68,7 +68,7 @@ Après fusion, relever le commit de main et attendre le succès du build **et du
 - l'accès direct aux recettes ajoutées/corrigées et la présence des dernières corrections;
 - la source, l'attribution, les avertissements et le rendement correct;
 - les valeurs nutritionnelles déclarées, leurs unités, approximations/fourchettes et base visible (y compris « non précisée »), sans ancien message d'omission devenu inexact;
-- le JSON-LD analysable, cohérent avec la fiche, sans image/nutrition non autorisée;
+- le JSON-LD analysable, cohérent avec la fiche, sans photo sans permission ni nutrition à base inventée;
 - `search-index.json`, les rubriques avec leurs liens entrants et les catégories/tags concernés.
 
 Pour un changement de contenu, ces contrôles HTTP et de données constituent la preuve de publication. Pour une modification d'interface, vérifier aussi les interactions concernées dans un navigateur si disponible. Décrire exactement ce qui a été vérifié; ne pas présenter un contrôle HTTP comme un test de clavier ou de mobile, ni fermer des critères d'interface distincts encore en attente.
