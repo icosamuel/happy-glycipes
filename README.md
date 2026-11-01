@@ -16,3 +16,7 @@ Le prototype du propriétaire est archivé dans `docs/design/`. Les exemples de 
 ## Contribuer une recette
 
 Voir [l’importateur](docs/import.md), [la relecture](docs/editorial.md) et [les propositions GitHub](docs/proposals.md). Les droits des textes et des photos sont traités séparément. Les notes personnelles restent dans le navigateur.
+
+Les agents lisent [AGENTS.md](AGENTS.md) et [la procédure d'ingestion jusqu'à publication](docs/recipe-ingestion.md). Par défaut, une mission d'ingestion comprend la fusion après validations, la vérification Pages et la clôture des propositions, sans nouvelle confirmation.
+
+Prompt minimal : « Traite les propositions #NUMERO et #NUMERO selon AGENTS.md et docs/recipe-ingestion.md, jusqu'à leur publication vérifiée et la clôture des issues. »

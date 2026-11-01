@@ -2,6 +2,8 @@
 
 Les états `draft`, `ready`, `published` décrivent l'édition. `experience` décrit une expérience de cuisine (par défaut « non testé »). Publier ne valide ni le goût ni la nutrition ni la conformité keto.
 
+Pour une ingestion confiée à un agent, [la procédure complète](recipe-ingestion.md) autorise la fusion après relecture et CI verte, sans nouvelle confirmation, puis impose la vérification de publication avant clôture des issues. La relecture décrite ici fait partie de cette mission; elle n'ajoute pas une attente d'approbation du propriétaire, sauf consigne explicite ou protection GitHub.
+
 1. Importer avec la commande documentée. Conserver le rapport et les champs source, hors du site public.
 2. Relire quantités et portions, étapes, relations/allocations, produits courants, catégorie/tags, attribution, nutrition, droits et ambiguïtés. Les suggestions de liens ne deviennent des liens qu'après validation explicite.
 3. Remplacer la reprise non autorisée par des notes reformulées et un lien vers l'original. Indiquer `rights.mode: reference-notes`. Pour un texte original ou licencié, conserver sa preuve dans `rights.evidence`.
