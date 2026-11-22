@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Muffins au pepperoni et à la courgette",
+    "description": "Des muffins salés à la courgette essorée, au pepperoni et au cheddar, avec de la farine de coco.",
+    "author": {
+      "@type": "Person",
+      "name": "Karolina Miles (Karo, All Nutritious)"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "6",
+    "recipeCategory": "Collation",
+    "prepTime": "PT15M",
+    "cookTime": "PT20M",
+    "totalTime": "PT35M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "servingSize": "1 muffin",
+      "calories": "101 kcal",
+      "carbohydrateContent": "5.2 g",
+      "proteinContent": "6.2 g",
+      "fatContent": "6.3 g",
+      "saturatedFatContent": "3 g",
+      "transFatContent": "0.1 g",
+      "cholesterolContent": "73 mg",
+      "sodiumContent": "251 mg",
+      "fiberContent": "1 g",
+      "sugarContent": "2.2 g",
+      "unsaturatedFatContent": "0.7 g"
+    }
+  },
+  "wiki": {
+    "id": "muffins-pepperoni-courgette",
+    "status": "published",
+    "experience": "non testé",
+    "sourceUrl": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/",
+    "canonicalUrl": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/",
+    "originalUrl": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/?utm_source=Pinterest&utm_medium=organic",
+    "importedAt": "2026-11-22T17:48:08.772Z",
+    "importerVersion": "1.0.0",
+    "importId": "import-4f2956647b56c117",
+    "yieldUnit": "muffins",
+    "tags": [
+      "Au four"
+    ],
+    "ingredients": [
+      {
+        "id": "courgette",
+        "name": "Courgette moyenne",
+        "quantity": 1,
+        "unit": "",
+        "note": "Râper, puis presser pour retirer le jus.",
+        "sourceLine": "1 medium zucchini"
+      },
+      {
+        "id": "oeufs",
+        "name": "Gros œufs",
+        "quantity": 2,
+        "unit": "",
+        "note": "",
+        "sourceLine": "2 large eggs"
+      },
+      {
+        "id": "cheddar",
+        "name": "Cheddar vieilli râpé",
+        "quantity": 0.5,
+        "unit": "tasse",
+        "note": "Réserver un peu du total pour le dessus.",
+        "sourceLine": "1/2 cup mature cheddar cheese (shredded)"
+      },
+      {
+        "id": "pepperoni",
+        "name": "Pepperoni",
+        "quantity": 8,
+        "unit": "tranches",
+        "note": "Hacher en petits morceaux.",
+        "sourceLine": "8 slices pepperoni"
+      },
+      {
+        "id": "farine-coco",
+        "name": "Farine de coco",
+        "quantity": 3,
+        "unit": "c. à soupe",
+        "note": "",
+        "sourceLine": "3 tbsp coconut flour"
+      },
+      {
+        "id": "poudre-a-pate",
+        "name": "Poudre à pâte",
+        "quantity": 0.25,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1/4 tsp baking powder"
+      },
+      {
+        "id": "thym",
+        "name": "Thym",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1/2 tsp thyme"
+      },
+      {
+        "id": "ail",
+        "name": "Poudre d’ail",
+        "quantity": 1,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1 tsp garlic powder"
+      },
+      {
+        "id": "sel",
+        "name": "Sel",
+        "quantity": 0.25,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1/4 tsp salt"
+      },
+      {
+        "id": "poivre",
+        "name": "Poivre noir",
+        "quantity": 0.125,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1/8 tsp black pepper"
+      },
+      {
+        "id": "huile",
+        "name": "Huile d’olive",
+        "quantity": null,
+        "unit": "",
+        "note": "Pour huiler les cavités. Quantité non précisée.",
+        "sourceLine": "Huile d’olive en vaporisateur dans la méthode",
+        "pantry": true
+      }
+    ],
+    "sourceIngredients": [
+      "1 medium zucchini",
+      "2 large eggs",
+      "1/2 cup mature cheddar cheese (shredded)",
+      "8 slices pepperoni",
+      "3 tbsp coconut flour",
+      "1/4 tsp baking powder",
+      "1/2 tsp thyme",
+      "1 tsp garlic powder",
+      "1/4 tsp salt",
+      "1/8 tsp black pepper"
+    ],
+    "steps": [
+      {
+        "name": "Préparer la courgette et le cheddar",
+        "text": "Essorer la courgette râpée. Hacher le pepperoni et réserver un peu de cheddar pour la garniture."
+      },
+      {
+        "name": "Mélanger la pâte",
+        "text": "Réunir la courgette, les œufs, le cheddar qui n’a pas été réservé, le pepperoni et les assaisonnements. Ajouter la farine de coco et la poudre à pâte."
+      },
+      {
+        "name": "Remplir et cuire",
+        "text": "Huiler les cavités d’un moule à muffins et y répartir la pâte pour former {{count:muffins}} muffins. Répartir le cheddar réservé sur le dessus. Cuire 20 minutes à 200 °C (400 °F). Laisser refroidir avant de servir."
+      }
+    ],
+    "sourceInstructions": [],
+    "sourceYield": "6 muffins",
+    "dependencies": [],
+    "allocations": [],
+    "counts": {
+      "muffins": 6
+    },
+    "netCarbs": {
+      "value": 4.2,
+      "source": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/"
+    },
+    "nutritionProvenance": {
+      "source": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/",
+      "basis": "par muffin, pour un lot de 6 muffins",
+      "note": "Estimations automatiques publiées par All Nutritious. La source indique séparément les glucides totaux, les fibres et les glucides nets."
+    },
+    "warnings": [
+      "La source indique une courgette moyenne sans préciser son poids après essorage.",
+      "La taille des tranches de pepperoni et le type de moule peuvent varier. La conformité keto n’a pas été évaluée."
+    ],
+    "adaptations": [
+      "Proposition GitHub nº 28 de jobed85. La recette d’All Nutritious est signée Karolina Miles, aussi créditée comme Karo dans la fiche.",
+      "Le cheddar de garniture fait partie de la quantité de base. L’huile classée comme produit courant sert uniquement à huiler le moule et la quantité n’est pas donnée.",
+      "Catégorie Collation, tag Au four."
+    ],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Notes reformulées en français. La recette et ses instructions originales restent consultables chez l’autrice.",
+      "photos": "Aucune permission photographique documentée. La fiche utilise l’illustration générique du carnet."
+    },
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recettes non cuisinées",
+      "date": "2026-11-22",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
+    }
+  }
+}

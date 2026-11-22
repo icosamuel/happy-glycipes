@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Cottage aux bleuets au four",
+    "description": "Un déjeuner au fromage cottage et aux bleuets, avec des variantes au citron, aux noix ou au chocolat.",
+    "author": {
+      "@type": "Person",
+      "name": "Paty (The Glam Siren)"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "6",
+    "recipeCategory": "Déjeuner",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "servingSize": "1 portion",
+      "calories": "~190 kcal",
+      "proteinContent": "~13 g",
+      "carbohydrateContent": "~18 g",
+      "fatContent": "~6 g",
+      "fiberContent": "~3 g"
+    }
+  },
+  "wiki": {
+    "id": "cottage-bleuets-au-four",
+    "status": "published",
+    "experience": "non testé",
+    "sourceUrl": "https://theglamsiren.com/2025/08/24/blueberry-cottage-cheese-breakfast/",
+    "canonicalUrl": "https://theglamsiren.com/2025/08/24/blueberry-cottage-cheese-breakfast/",
+    "originalUrl": "https://theglamsiren.com/2025/08/24/blueberry-cottage-cheese-breakfast/?utm_source=Pinterest&utm_medium=organic",
+    "importedAt": "2026-11-22T17:48:08.035Z",
+    "importerVersion": "1.0.0",
+    "importId": "import-0f32804f4c48f290",
+    "yieldUnit": "portions",
+    "tags": [
+      "Au four",
+      "Végétarien"
+    ],
+    "ingredients": [
+      {
+        "id": "cottage",
+        "name": "Fromage cottage",
+        "quantity": 1,
+        "unit": "tasse",
+        "note": "Mixer jusqu’à ce que le fromage soit lisse.",
+        "sourceLine": "1 cup blended cottage cheese"
+      },
+      {
+        "id": "oeufs",
+        "name": "Gros œufs",
+        "quantity": 2,
+        "unit": "",
+        "note": "",
+        "sourceLine": "2 large eggs"
+      },
+      {
+        "id": "avoine",
+        "name": "Flocons d’avoine",
+        "quantity": 0.5,
+        "unit": "tasse",
+        "note": "Facultatifs. Les omettre pour une texture de flan.",
+        "sourceLine": "½ cup rolled oats (optional for extra texture)"
+      },
+      {
+        "id": "miel-erable",
+        "name": "Miel ou sirop d’érable",
+        "quantity": 2,
+        "unit": "c. à soupe",
+        "note": "Choisir l’un des deux.",
+        "sourceLine": "2 tbsp honey or maple syrup"
+      },
+      {
+        "id": "vanille",
+        "name": "Extrait de vanille",
+        "quantity": 1,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1 tsp vanilla extract"
+      },
+      {
+        "id": "cannelle",
+        "name": "Cannelle",
+        "quantity": 1,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1 tsp cinnamon"
+      },
+      {
+        "id": "bleuets",
+        "name": "Bleuets",
+        "quantity": 1,
+        "unit": "tasse",
+        "note": "Frais ou surgelés. Prélever la garniture de cette mesure.",
+        "sourceLine": "1 cup fresh or frozen blueberries"
+      },
+      {
+        "id": "poudre-a-pate",
+        "name": "Poudre à pâte",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "½ tsp baking powder"
+      },
+      {
+        "id": "gras-moule",
+        "name": "Matière grasse pour le moule",
+        "quantity": null,
+        "unit": "",
+        "note": "Quantité et produit non précisés.",
+        "sourceLine": "Moule graissé dans la méthode",
+        "pantry": true
+      }
+    ],
+    "sourceIngredients": [
+      "1 cup blended cottage cheese",
+      "2 large eggs",
+      "½ cup rolled oats (optional for extra texture)",
+      "2 tbsp honey or maple syrup",
+      "1 tsp vanilla extract",
+      "1 tsp cinnamon",
+      "1 cup fresh or frozen blueberries",
+      "½ tsp baking powder"
+    ],
+    "steps": [
+      {
+        "name": "Préparer le plat",
+        "text": "Régler le four à 175 °C (350 °F) et graisser un plat carré de 8 × 8 po."
+      },
+      {
+        "name": "Mélanger la base",
+        "text": "Passer au mélangeur le fromage cottage, les œufs, la vanille, la cannelle et le miel ou le sirop d’érable. Incorporer la poudre à pâte, puis les flocons d’avoine si désiré."
+      },
+      {
+        "name": "Répartir les bleuets",
+        "text": "Prélever une poignée de bleuets pour le dessus. Incorporer le reste à la préparation, verser dans le plat et répartir les bleuets réservés."
+      },
+      {
+        "name": "Cuire",
+        "text": "Compter de 35 à 40 minutes au four. Chercher une surface dorée et un centre pris."
+      },
+      {
+        "name": "Choisir une variante",
+        "text": "Pour la version à l’avoine et au chia, garder l’avoine de la base et ajouter des graines de chia. Pour une garniture croquante, choisir des noix de Grenoble, des amandes ou des pacanes. La source ne donne pas de quantité pour ces ajouts."
+      },
+      {
+        "name": "Parfumer au citron ou au chocolat",
+        "text": "Pour la variante au citron, incorporer {{count:zeste-citron}} c. à soupe de zeste et {{count:jus-citron}} c. à soupe de jus. Pour la variante au chocolat, ajouter {{count:chocolat}} tasse de pépites de chocolat noir."
+      },
+      {
+        "name": "Essayer la farine d’amande",
+        "text": "La source suggère de remplacer l’avoine par de la {{article:farine-amande}}. La quantité de farine reste à déterminer et les autres ingrédients de la base restent ceux de la source."
+      }
+    ],
+    "sourceInstructions": [],
+    "sourceYield": "6 portions, selon le tableau nutritionnel",
+    "dependencies": [],
+    "allocations": [],
+    "counts": {
+      "zeste-citron": 1,
+      "jus-citron": 1,
+      "chocolat": 0.25
+    },
+    "nutritionProvenance": {
+      "source": "https://theglamsiren.com/2025/08/24/blueberry-cottage-cheese-breakfast/",
+      "basis": "par portion, pour 6 portions selon la source",
+      "note": "Estimations de la source. La méthode de calcul, la présence d’avoine et le choix du sucrant pour ces valeurs ne sont pas précisés."
+    },
+    "warnings": [
+      "La cuisson est annoncée entre 35 et 40 minutes. Les durées de préparation et de repos ne sont pas précisées.",
+      "La variante à la farine d’amande conserve le miel ou le sirop d’érable dans la recette de base. Sa teneur en glucides et sa conformité keto n’ont pas été évaluées."
+    ],
+    "adaptations": [
+      "Proposition GitHub nº 28 de jobed85. Paty est l’autrice de l’article. L’importateur n’a trouvé aucun Recipe exploitable, puis la fiche a été structurée manuellement à partir de l’article.",
+      "La liste à prévoir présente le lot de base avec avoine facultative. Chaque variante décrit un changement distinct. La garniture de bleuets est prélevée de la mesure de la base.",
+      "Catégorie Déjeuner, tags Au four et Végétarien. Lien vers la rubrique Farine d’amande dans la variante."
+    ],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Notes reformulées en français. La recette et ses instructions originales restent consultables chez l’autrice.",
+      "photos": "Aucune permission photographique documentée. La fiche utilise l’illustration générique du carnet."
+    },
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recettes non cuisinées",
+      "date": "2026-11-22",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
+    }
+  }
+}
