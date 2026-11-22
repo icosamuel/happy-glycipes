@@ -37,3 +37,12 @@ test('les croquettes affichent les fourchettes sans inventer une portion ni des 
   delete invalid.wiki.nutritionProvenance;
   assert.throws(()=>validateRecipe(invalid),/provenance nutrition absente/);
 });
+
+test('les données complémentaires sont visibles avec la nutrition structurée, sans entrer dans son export',()=>{
+  const d=loadRecipes().find(d=>d.wiki.id==='pain-olives');
+  d.wiki.reportedNutrition={potassium:'120 mg'};
+  const html=recipePage(d);
+  assert.ok(html.includes('<strong>120 mg</strong><span>potassium</span>'));
+  assert.ok(html.includes('<strong>~185 kcal</strong><span>énergie</span>'));
+  assert.equal(recipeJsonLd(d).nutrition.potassium,undefined);
+});

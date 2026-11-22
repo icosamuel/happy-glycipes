@@ -1,0 +1,151 @@
+{
+  "issue": "https://github.com/icosamuel/happy-glycipes/issues/28",
+  "proponent": "jobed85",
+  "preparation": [
+    {
+      "recipe": "cottage-bleuets-au-four",
+      "report": {
+        "id": "import-0f32804f4c48f290",
+        "sourceUrl": "https://theglamsiren.com/2025/08/24/blueberry-cottage-cheese-breakfast/",
+        "canonicalUrl": "https://theglamsiren.com/2025/08/24/blueberry-cottage-cheese-breakfast/",
+        "importerVersion": "1.0.0",
+        "importedAt": "2026-11-22T17:48:08.035Z",
+        "candidates": 0,
+        "warnings": [
+          "Brouillon : conformité keto, nutrition, portions et droits à relire.",
+          "Aucun Recipe exploitable. Compléter manuellement depuis la référence; aucune publication automatique.",
+          "Étapes manquantes.",
+          "Portions non normalisées : absentes"
+        ]
+      },
+      "source": {},
+      "review": "Complété depuis l’article public. Les cinq repères du tableau par portion sont approximatifs, et la variante correspondant aux estimations est inconnue. Les cinq variantes restent distinctes du lot de base."
+    },
+    {
+      "recipe": "pain-pomme-courgette-cottage",
+      "report": {
+        "id": "import-4a59854c1e87b4c3",
+        "sourceUrl": "https://allnutritious.com/cottage-cheese-apple-zucchini-cake/",
+        "canonicalUrl": "https://allnutritious.com/cottage-cheese-apple-zucchini-cake/",
+        "importerVersion": "1.0.0",
+        "importedAt": "2026-11-22T17:48:08.426Z",
+        "candidates": 1,
+        "warnings": [
+          "Brouillon : conformité keto, nutrition, portions et droits à relire.",
+          "Quantité/unité inconnue : 1 cup grated zucchini (all juices squeezed out)",
+          "Quantité/unité inconnue : 1 cup cottage cheese (blended)",
+          "Quantité/unité inconnue : 1/3 cup maple syrup",
+          "Quantité/unité inconnue : 1 tsp vanilla extract",
+          "Quantité/unité inconnue : 1/2 tsp cinnamon",
+          "Quantité/unité inconnue : 1/2 tsp baking powder",
+          "Quantité/unité inconnue : 1/2 tsp baking soda",
+          "Quantité/unité inconnue : 3 cups almond flour",
+          "Quantité/unité inconnue : ½ large apple (diced)",
+          "Portions non normalisées : 10,10 slices",
+          "Nutrition source conservée dans source.json; base et valeurs à vérifier avant publication."
+        ]
+      },
+      "source": {
+        "@id": "https://allnutritious.com/cottage-cheese-apple-zucchini-cake/#recipe",
+        "name": "Cottage Cheese Apple Zucchini Cake",
+        "author": {
+          "@id": "https://allnutritious.com/#/schema/person/6eac201a3115b592c835a2acc936b5ec"
+        },
+        "recipeYield": [
+          "10",
+          "10 slices"
+        ],
+        "recipeIngredient": [
+          "1 cup grated zucchini (all juices squeezed out)",
+          "1 cup cottage cheese (blended)",
+          "3 large eggs",
+          "1/3 cup maple syrup",
+          "1 tsp vanilla extract",
+          "1/2 tsp cinnamon",
+          "1/2 tsp baking powder",
+          "1/2 tsp baking soda",
+          "3 cups almond flour",
+          "½ large apple (diced)"
+        ],
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "servingSize": "1  slice (4 oz)",
+          "calories": "275 kcal",
+          "fatContent": "19 g",
+          "saturatedFatContent": "2.1 g",
+          "cholesterolContent": "59 mg",
+          "sodiumContent": "191 mg",
+          "carbohydrateContent": "17 g",
+          "fiberContent": "4.7 g",
+          "sugarContent": "10 g",
+          "proteinContent": "12 g",
+          "unsaturatedFatContent": "15.5 g"
+        }
+      },
+      "review": "Le tableau de la fiche et le JSON-LD indiquent 17 g de glucides par tranche contre moins de 12 g dans l’introduction. Le tableau prévaut. Les acides gras mono-insaturés et polyinsaturés, le potassium, le calcium et le fer sont visibles dans le tableau et conservés dans reportedNutrition."
+    },
+    {
+      "recipe": "muffins-pepperoni-courgette",
+      "report": {
+        "id": "import-4f2956647b56c117",
+        "sourceUrl": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/",
+        "canonicalUrl": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/",
+        "importerVersion": "1.0.0",
+        "importedAt": "2026-11-22T17:48:08.772Z",
+        "candidates": 1,
+        "warnings": [
+          "Brouillon : conformité keto, nutrition, portions et droits à relire.",
+          "Quantité/unité inconnue : 1/2 cup mature cheddar cheese (shredded)",
+          "Quantité/unité inconnue : 3 tbsp coconut flour",
+          "Quantité/unité inconnue : 1/4 tsp baking powder",
+          "Quantité/unité inconnue : 1/2 tsp thyme",
+          "Quantité/unité inconnue : 1 tsp garlic powder",
+          "Quantité/unité inconnue : 1/4 tsp salt",
+          "Quantité/unité inconnue : 1/8 tsp black pepper",
+          "Portions non normalisées : 6,6 muffins",
+          "Nutrition source conservée dans source.json; base et valeurs à vérifier avant publication."
+        ]
+      },
+      "source": {
+        "@id": "https://allnutritious.com/keto-pepperoni-zucchini-muffins/#recipe",
+        "name": "Keto Pepperoni Zucchini Muffins",
+        "author": {
+          "@type": "Person",
+          "name": "Karo @ AllNutritious"
+        },
+        "recipeYield": [
+          "6",
+          "6 muffins"
+        ],
+        "recipeIngredient": [
+          "1 medium zucchini",
+          "2 large eggs",
+          "1/2 cup mature cheddar cheese (shredded)",
+          "8 slices pepperoni",
+          "3 tbsp coconut flour",
+          "1/4 tsp baking powder",
+          "1/2 tsp thyme",
+          "1 tsp garlic powder",
+          "1/4 tsp salt",
+          "1/8 tsp black pepper"
+        ],
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "servingSize": "1 muffin",
+          "calories": "101 kcal",
+          "carbohydrateContent": "5.2 g",
+          "proteinContent": "6.2 g",
+          "fatContent": "6.3 g",
+          "saturatedFatContent": "3 g",
+          "transFatContent": "0.1 g",
+          "cholesterolContent": "73 mg",
+          "sodiumContent": "251 mg",
+          "fiberContent": "1 g",
+          "sugarContent": "2.2 g",
+          "unsaturatedFatContent": "0.7 g"
+        }
+      },
+      "review": "Le tableau nutritionnel est par muffin. Le texte indique aussi 4,2 g de glucides nets, conservés séparément des 5,2 g de glucides totaux."
+    }
+  ]
+}

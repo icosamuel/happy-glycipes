@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "recipe": {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Pain à la pomme, à la courgette et au cottage",
+    "description": "Un pain à la farine d’amande et à la cannelle, garni de dés de pomme.",
+    "author": {
+      "@type": "Person",
+      "name": "Karolina Miles (All Nutritious)"
+    },
+    "inLanguage": "fr-CA",
+    "recipeYield": "10",
+    "recipeCategory": "Collation",
+    "prepTime": "PT15M",
+    "cookTime": "PT50M",
+    "totalTime": "PT85M",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "servingSize": "1 tranche (4 oz)",
+      "calories": "275 kcal",
+      "fatContent": "19 g",
+      "saturatedFatContent": "2.1 g",
+      "cholesterolContent": "59 mg",
+      "sodiumContent": "191 mg",
+      "carbohydrateContent": "17 g",
+      "fiberContent": "4.7 g",
+      "sugarContent": "10 g",
+      "proteinContent": "12 g",
+      "unsaturatedFatContent": "15.5 g"
+    }
+  },
+  "wiki": {
+    "id": "pain-pomme-courgette-cottage",
+    "status": "published",
+    "experience": "non testé",
+    "sourceUrl": "https://allnutritious.com/cottage-cheese-apple-zucchini-cake/",
+    "canonicalUrl": "https://allnutritious.com/cottage-cheese-apple-zucchini-cake/",
+    "originalUrl": "https://allnutritious.com/cottage-cheese-apple-zucchini-cake/?utm_source=Pinterest&utm_medium=organic",
+    "importedAt": "2026-11-22T17:48:08.426Z",
+    "importerVersion": "1.0.0",
+    "importId": "import-4a59854c1e87b4c3",
+    "yieldUnit": "tranches",
+    "tags": [
+      "Au four",
+      "Végétarien"
+    ],
+    "ingredients": [
+      {
+        "id": "courgette",
+        "name": "Courgette râpée",
+        "quantity": 1,
+        "unit": "tasse",
+        "note": "Mesurer après avoir pressé la courgette.",
+        "sourceLine": "1 cup grated zucchini (all juices squeezed out)"
+      },
+      {
+        "id": "cottage",
+        "name": "Fromage cottage",
+        "quantity": 1,
+        "unit": "tasse",
+        "note": "Mixer pour obtenir une texture lisse.",
+        "sourceLine": "1 cup cottage cheese (blended)"
+      },
+      {
+        "id": "oeufs",
+        "name": "Gros œufs",
+        "quantity": 3,
+        "unit": "",
+        "note": "",
+        "sourceLine": "3 large eggs"
+      },
+      {
+        "id": "erable",
+        "name": "Sirop d’érable",
+        "quantity": 0.3333333333333333,
+        "unit": "tasse",
+        "note": "La source indique ⅓ de tasse.",
+        "sourceLine": "1/3 cup maple syrup"
+      },
+      {
+        "id": "vanille",
+        "name": "Extrait de vanille",
+        "quantity": 1,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1 tsp vanilla extract"
+      },
+      {
+        "id": "cannelle",
+        "name": "Cannelle",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1/2 tsp cinnamon"
+      },
+      {
+        "id": "poudre-a-pate",
+        "name": "Poudre à pâte",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1/2 tsp baking powder"
+      },
+      {
+        "id": "bicarbonate",
+        "name": "Bicarbonate de soude",
+        "quantity": 0.5,
+        "unit": "c. à thé",
+        "note": "",
+        "sourceLine": "1/2 tsp baking soda"
+      },
+      {
+        "id": "farine-amande",
+        "name": "Farine d’amande",
+        "quantity": 3,
+        "unit": "tasses",
+        "note": "",
+        "sourceLine": "3 cups almond flour",
+        "article": "farine-amande"
+      },
+      {
+        "id": "pomme",
+        "name": "Grosse pomme",
+        "quantity": 0.5,
+        "unit": "",
+        "note": "Couper en dés pour la garniture.",
+        "sourceLine": "½ large apple (diced)"
+      },
+      {
+        "id": "gras-moule",
+        "name": "Matière grasse pour le moule",
+        "quantity": null,
+        "unit": "",
+        "note": "Quantité et produit non précisés.",
+        "sourceLine": "Parois graissées dans la méthode",
+        "pantry": true
+      }
+    ],
+    "sourceIngredients": [
+      "1 cup grated zucchini (all juices squeezed out)",
+      "1 cup cottage cheese (blended)",
+      "3 large eggs",
+      "1/3 cup maple syrup",
+      "1 tsp vanilla extract",
+      "1/2 tsp cinnamon",
+      "1/2 tsp baking powder",
+      "1/2 tsp baking soda",
+      "3 cups almond flour",
+      "½ large apple (diced)"
+    ],
+    "steps": [
+      {
+        "name": "Chemiser le moule",
+        "text": "Préchauffer le four à 350 °F. Mettre du papier parchemin dans un moule à pain et graisser les parois."
+      },
+      {
+        "name": "Presser la courgette",
+        "text": "Presser la courgette râpée par poignées pour enlever le jus, puis mesurer {{ingredient:courgette}} tasse de courgette pressée. Réunir avec le cottage lissé, les œufs, le sirop d’érable, la vanille, la cannelle, la poudre à pâte et le bicarbonate."
+      },
+      {
+        "name": "Former la pâte",
+        "text": "Incorporer peu à peu la {{article:farine-amande}}, en remuant juste assez pour l’intégrer. Étaler la pâte dans le moule et couvrir de dés de pomme."
+      },
+      {
+        "name": "Cuire et laisser reposer",
+        "text": "Vérifier le centre avec un cure-dent après 50 minutes. S’il ressort avec de la pâte, prolonger de 5 à 10 minutes. Laisser reposer dans le moule avant de trancher. La source compte 20 minutes de repos."
+      },
+      {
+        "name": "Couper le pain",
+        "text": "Pour suivre le rendement annoncé, couper en {{count:tranches}} tranches."
+      }
+    ],
+    "sourceInstructions": [],
+    "sourceYield": "10 slices",
+    "dependencies": [],
+    "allocations": [],
+    "counts": {
+      "tranches": 10
+    },
+    "reportedNutrition": {
+      "acides gras polyinsaturés": "4.5 g",
+      "acides gras mono-insaturés": "11 g",
+      "potassium": "356.3 mg",
+      "calcium": "145 mg",
+      "fer": "1.6 mg"
+    },
+    "nutritionProvenance": {
+      "source": "https://allnutritious.com/cottage-cheese-apple-zucchini-cake/",
+      "basis": "par tranche de 4 oz selon la source, pour un rendement annoncé de 10 tranches",
+      "note": "Estimations automatiques publiées par All Nutritious. Le texte introductif indique moins de 12 g de glucides alors que le tableau et le JSON-LD de la source donnent 17 g de glucides totaux. La fiche reprend le tableau."
+    },
+    "warnings": [
+      "Les 50 minutes de cuisson et le total de 1 h 25 correspondent aux temps affichés. La méthode prévoit 5 à 10 minutes de cuisson supplémentaires au besoin.",
+      "La source ne précise pas les dimensions du moule. La pomme et le sirop d’érable figurent dans la version de base."
+    ],
+    "adaptations": [
+      "Proposition GitHub nº 28 de jobed85. La recette d’All Nutritious est signée Karolina Miles.",
+      "Le rendement de 10 tranches vient de la fiche. Les quantités conservent les mesures source, y compris le volume de courgette après égouttage.",
+      "Catégorie Collation, tags Au four et Végétarien. Lien vers la rubrique Farine d’amande."
+    ],
+    "rights": {
+      "mode": "reference-notes",
+      "text": "Notes reformulées en français. La recette et ses instructions originales restent consultables chez l’autrice.",
+      "photos": "Aucune permission photographique documentée. La fiche utilise l’illustration générique du carnet."
+    },
+    "review": {
+      "reviewedBy": "Codex — relecture éditoriale automatisée, recettes non cuisinées",
+      "date": "2026-11-22",
+      "checklist": {
+        "quantities": true,
+        "steps": true,
+        "relations": true,
+        "pantry": true,
+        "taxonomy": true,
+        "attribution": true,
+        "nutrition": true,
+        "rights": true,
+        "ambiguities": true
+      }
+    }
+  }
+}
